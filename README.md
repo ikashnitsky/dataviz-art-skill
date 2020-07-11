@@ -38,4 +38,13 @@
 ## Day 5, Friday, July 17: MAPS II
 - Mapping Europe with {eurostat}
 - Mapping the US with {tidycensus}
-- Mapping challenge-
+- Mapping challenge
+
+# Links to submit assignments
+- Impressive dataviz -- https://bit.ly/dv-mpidr-cool (day 1)
+- Crappy dataviz -- https://bit.ly/dv-mpidr-crappy (day 1)
+- Ugly `ggplot2` theme -- https://bit.ly/dv-mpidr-ugly (day 2)
+- Altmetric top-100 2019 -- https://bit.ly/dv-mpidr-alt (day 3)
+- Thematic map -- https://bit.ly/dv-mpidr-map (day 4)
+
+
