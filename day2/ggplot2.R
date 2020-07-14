@@ -1,5 +1,5 @@
 #===============================================================================
-# 2020-07-13 -- MPIDR dataviz
+# 2020-07-14 -- MPIDR dataviz
 # ggplot2 basics
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -21,6 +21,15 @@ plot(obj)
 library(rgdal)
 shapefile <- readOGR("data/.", "shape-france")
 plot(shapefile)
+
+
+# autoplot example
+mb_test <- microbenchmark::microbenchmark(
+    a = sqrt(7),
+    b = 7^.5
+)
+
+mb_test %>% autoplot()
 
 
 
@@ -86,6 +95,13 @@ df_aq %>%
 df_aq %>%
     ggplot(aes(x = date, y = temp, color = month)) +
     geom_line()
+
+# difference between geom_line and geom_path
+set.seed(42)
+tibble(
+    x = runif(10),
+    y = runif(10)
+)
 
 
 
@@ -188,40 +204,45 @@ swiss %>%
 
 # density / ecdf (airquality)
 
-ggplot(airquality) +
-    geom_density(aes(x = Temp, color = factor(Month)), size = 1) +
+df_aq %>% 
+    ggplot()+
+    geom_density(aes(x = temp, color = month), size = 1) +
     scale_color_viridis_d(option = "D", end = .8) +
     theme_minimal() +
     theme(legend.position = c(.1, .8))
 
-ggplot(airquality) +
-    stat_ecdf(aes(x = Temp, color = factor(Month)), size = 1) +
+df_aq %>% 
+    ggplot()+
+    stat_ecdf(aes(x = temp, color = month), size = 1) +
     scale_color_viridis_d(option = "B", end = .8) +
     theme_minimal() +
     theme(legend.position = c(.1, .8))
 
 
 # boxplot
-ggplot(airquality) +
-    geom_boxplot(aes(x = factor(Month), y = Temp))
+df_aq %>% 
+    ggplot()+
+    geom_boxplot(aes(x = month, y = temp))
 
 # violin
-ggplot(airquality) +
+df_aq %>% 
+    ggplot()+
     geom_violin(
         aes(
-            x = factor(Month),
-            y = Temp,
-            fill = factor(Month)
+            x = month,
+            y = temp,
+            fill = month
         )
     )
 
 # jitter
-ggplot(airquality) +
+df_aq %>% 
+    ggplot()+
     geom_jitter(
         aes(
-            x = factor(Month),
-            y = Temp,
-            color = factor(Month)
+            x = month,
+            y = temp,
+            color = month
         ),
         width = .2
     )

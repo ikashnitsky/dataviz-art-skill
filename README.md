@@ -16,29 +16,27 @@
 - Basic dataviz principles ([slides][slides-gg])
 - Impressive dataviz showcasess
 - Tidy approach to data
-- {ggplot2} basics
 
 ### Day 2, Tuesday, July 14: TUNE-UP
-- More advanced {ggplot2}
-- Colors in dataviz
-- Themes and fonts
-- Population pyramids and animation
+- {ggplot2} intro
+- Colors, themes and fonts
+- Arranging and exporting plots
 
 ### Day 3, Wednesday, July 15: TOOLBOX
-- Useful types of dataviz
-- Dotplots – the most neglected and powerful type of dataviz
+- Useful types of plots
 - Heatmaps, equality-line, ggridges, treemap
 - Ternary plots and ternary colorcoding
 
-### Day 4, Thursday, July 16: MAPS I
+### Day 4, Thursday, July 16: INTERACT
+- Population pyramids
+- Interactivity with {shiny}
+- Animation with {gganimate}
+
+### Day 5, Friday, July 17: MAPS
 - The basics of map projections ([slides][slides-map])
 - {sf} – the game changer in #rspatial, `geom_sf`
 - Useful spatial processing tricks
-
-### Day 5, Friday, July 17: MAPS II
 - Mapping Europe with {eurostat}
-- Mapping the US with {tidycensus}
-- Mapping challenge
 
 [slides-gg]: https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-dataviz.html
 [slides-map]: /https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-maps.html
