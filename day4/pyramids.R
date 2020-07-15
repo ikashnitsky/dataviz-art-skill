@@ -34,7 +34,7 @@ df_dk <- eu_pop %>%
     arrange(time, sex, age)
 
 
-save(df_dk, file = here::here("data/df_dk.rda"))
+save(df_dk, file = "data/df_dk.rda")
 
 
 df_dk %>% 
@@ -148,7 +148,7 @@ compare_pop <- function(cntr = c("IT", "BG")) {
         coord_cartesian(expand = F)+
         scale_y_continuous(labels = scales::percent)+
         theme_minimal()+
-        theme(legend.position = c(.9,.9))
+        theme(legend.position = c(.9,.8))
 }
 
 

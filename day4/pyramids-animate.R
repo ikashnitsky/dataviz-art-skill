@@ -22,7 +22,7 @@ library(tidyverse)
 library(gganimate)
 
 
-load(here::here("data/df_dk.rda"))
+load("data/df_dk.rda")
 
 
 gg <- df_dk %>% 
@@ -82,5 +82,5 @@ animate(
     end_pause = 10
 )
 
-anim_save('test-anim.gif')
+anim_save("out/test-anim.gif")
 

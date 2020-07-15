@@ -31,7 +31,6 @@ pacman::p_load(
   geofacet,
   ggtern,
   tricolore,
-  gganimate,
   plotly,
   shiny,
   # data
@@ -40,6 +39,10 @@ pacman::p_load(
   wpp2015,
   rtweet,
   gapminder,
+  # animation
+  gganimate,
+  transformr,
+  gifski,
   # rspatial
   sf,
   rmapshaper,
