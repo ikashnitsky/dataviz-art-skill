@@ -1,5 +1,5 @@
 #===============================================================================
-# 2020-07-14 -- MPIDR dataviz
+# 2020-07-15 -- MPIDR dataviz
 # Dataviz challenge -- Altmetric top-100 2019
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -12,7 +12,7 @@
 # Citation of the dataset:
 # Engineering, Altmetric (2019): 2019 Altmetric Top 100 - dataset. Altmetric. Dataset. https://doi.org/10.6084/m9.figshare.11371860.v3
 
-# SUBMIT your result via Google form before 2020-07-15 23:59 CET (end day 3)
+# SUBMIT your result via Google form before 2020-07-16 23:59 CET (end day 4)
 # Please, name your plot with your surname -- eg "KASHNITSKY.png"
 # Note: you need a Google account to upload files in the form
 # https://bit.ly/dv-mpidr-alt

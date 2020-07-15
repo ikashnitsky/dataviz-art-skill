@@ -42,10 +42,12 @@
 [slides-map]: /https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-maps.html
 
 # Links to submit assignments
-- Impressive dataviz -- https://bit.ly/dv-mpidr-cool (day 1)
-- Crappy dataviz -- https://bit.ly/dv-mpidr-crappy (day 1)
-- Ugly `ggplot2` theme -- https://bit.ly/dv-mpidr-ugly (day 2)
-- Altmetric top-100 2019 -- https://bit.ly/dv-mpidr-alt (day 3)
-- Thematic map -- https://bit.ly/dv-mpidr-map (day 4)
+- Impressive dataviz -- https://bit.ly/dv-mpidr-cool (day 1) [SUMBISSIONS][gd1]
+- Crappy dataviz -- https://bit.ly/dv-mpidr-crappy (day 1) [SUMBISSIONS][gd2]
+- Ugly `ggplot2` theme -- https://bit.ly/dv-mpidr-ugly (day 3) [SUMBISSIONS][gd3]
+- Altmetric top-100 2019 -- https://bit.ly/dv-mpidr-alt (day 4) [SUMBISSIONS][gd4]
 
-
+[gd1]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfkNKOC1BSXFmU2NMNFJYcTJ2UTMyUHUtYUxLdmJiZ2FWekZwUjNPdFhuX3c?usp=sharing
+[gd2]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfnk1WnQwbEhzRXkzajhUS1hKQ2s0UU1HQVR4NDNGc3NUM1F4N1JTQTNHUjA?usp=sharing
+[gd3]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfmVRclVJcl9sangwMFpVYmoteUl6ZzdXbnFNSlBhNW02Yk5oaF9LRDlXRm8?usp=sharing
+[gf4]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfnEyVm5kc2xrUzZXaXRNdkNSWkJzYWZINDlnQWZDTHEwdlBjY3NLU2VEeUE?usp=sharing
