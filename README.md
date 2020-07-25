@@ -39,7 +39,7 @@
 - Mapping Europe with {eurostat}
 
 [slides-gg]: https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-dataviz.html
-[slides-map]: /https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-maps.html
+[slides-map]: https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-maps.html
 
 # Links to submit assignments
 - Impressive dataviz -- https://bit.ly/dv-mpidr-cool (day 1) [SUMBISSIONS][gd1]
