@@ -24,8 +24,8 @@
 # https://twitter.com/karim_douieb
 # https://twitter.com/drob
 # https://twitter.com/nsgrantham
-# twitter.com/juliasilge
-# twitter.com/philmassicotte
+# https://twitter.com/juliasilge
+# https://twitter.com/philmassicotte
 # https://twitter.com/hrbrmstr
 # https://twitter.com/undertheraedar
 # https://twitter.com/CraigTaylorViz
