@@ -1,5 +1,5 @@
 #===============================================================================
-# 2020-07-15 -- MPIDR dataviz
+# 2021-06-16 -- MPIDR dataviz
 # Geofaceting & treemap
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -58,7 +58,7 @@ state_unemp %>%
 # treemap example using TidyTuesday Schools Ethnic Diversity dataset
 df <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-24/school_diversity.csv")
 
-#  calculate statisic to plot
+#  calculate statstic to plot
 eth <- df %>% 
     pivot_longer(Asian:Multi, names_to = "race",  values_to = "prop") %>% 
     group_by(ST, race, SCHOOL_YEAR) %>% 

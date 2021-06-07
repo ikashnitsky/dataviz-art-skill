@@ -1,5 +1,5 @@
 #===============================================================================
-# 2020-07-13 -- MPIDR dataviz
+# 2021-06-14 -- MPIDR dataviz
 # Tidy exercises
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -99,7 +99,7 @@ df %>%
   filter(sex == "b") %>% 
   select(-pop, -deaths) %>% 
   pivot_wider(names_from = year, values_from = mx) %>% 
-  mutate(mx_growth = (`2005`/`2001`) %>% na_if(Inf)) %>% # note the `` -- base numbers are not allowed for R objects
+  mutate(mx_growth = (`2005`/`2001`) %>% na_if(Inf)) %>% # note the `` -- bare numbers are not allowed for R objects
   group_by(region) %>% 
   summarise(avg_mx_growth = mx_growth %>% mean(na.rm = TRUE)) %>% 
   arrange(avg_mx_growth %>% desc)

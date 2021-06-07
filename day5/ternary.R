@@ -1,5 +1,5 @@
 #===============================================================================
-# 2020-07-16 -- MPIDR dataviz
+# 2021-06-18 -- MPIDR dataviz
 # Ternary plots
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -10,7 +10,7 @@
 # a bit of history
 # https://twitter.com/ikashnitsky/status/1176947910908534785
 
-# Euroepan population structures
+# European population structures
 # https://twitter.com/ikashnitsky/status/1020257091574018048
 
 # discussion spin-off

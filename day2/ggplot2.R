@@ -1,5 +1,5 @@
 #===============================================================================
-# 2020-07-14 -- MPIDR dataviz
+# 2021-06-15 -- MPIDR dataviz
 # ggplot2 basics
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -11,17 +11,21 @@ library(tidyverse)
 # base --------------------------------------------------------------------
 
 
-# automatic plots for linear model
-obj <- lm(data = swiss, Fertility ~ Education)
-plot(obj)
-
-
-
 # blank map
 library(rgdal)
 shapefile <- readOGR("data/.", "shape-france")
 plot(shapefile)
 
+
+# automatic plots for linear model
+obj <- lm(data = swiss, Fertility ~ Education)
+plot(obj)
+
+# similar plot in ggplot2 framework using ggfortify
+# https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_lm.html
+library(ggfortify)
+obj %>% autoplot(label.size = 3)
+obj %>% autoplot(which = 1:6, ncol = 3, label.size = 3)
 
 # autoplot example
 mb_test <- microbenchmark::microbenchmark(
@@ -30,6 +34,8 @@ mb_test <- microbenchmark::microbenchmark(
 )
 
 mb_test %>% autoplot()
+
+
 
 
 
@@ -97,8 +103,9 @@ df_aq %>%
     geom_line()
 
 # difference between geom_line and geom_path
-set.seed(42)
+set.seed(14)
 tibble(
+    id = 1:10,
     x = runif(10),
     y = runif(10)
 )
@@ -115,30 +122,6 @@ gapminder %>%
     ggplot(aes(x = year, y = avg_e0, color = continent)) +
     geom_path(size = 1) +
     theme_minimal(base_family = "mono")
-
-
-
-
-
-
-load("data/Denmark.Rdata")
-
-df %>%
-    filter(year == "2004", sex == "m",!age %in% c("total", "open")) %>%
-    mutate(age = age %>% as.numeric()) %>% 
-    ggplot() +
-    geom_line(
-        aes(
-            x = age,
-            y = mx,
-            group = region,
-            color = region
-        )
-    ) +
-    scale_y_continuous(trans = "log", breaks = c(.0001, .001, .01)) +
-    theme_minimal()
-
-
 
 
 
@@ -246,6 +229,14 @@ df_aq %>%
         ),
         width = .2
     )
+
+
+# combine boxplot and jitter
+
+
+# ROTATE THE DAMN PLOT
+# https://twitter.com/ikashnitsky/status/1379398990266048512
+# https://twitter.com/RotatePlot
 
 
 # label lines hack --------------------------------------------------------

@@ -1,53 +1,59 @@
-# Data visualization course at MPIDR
+# Data Visualization – the Art/Skill Cocktail
 
 ![[teaser][small]][large]
 
 [small]: https://i.imgur.com/jeO5gxW.png
 [large]: https://i.imgur.com/yVB7iYK.png
 
-# [Course announcement][link]
+# [Course announcement @ MPIDR][link]
 
-[link]: https://bit.ly/dataviz-mpidr-2020
+[link]: https://bit.ly/mpidr-dataviz-2021
 
+# Course Description
+
+In the ever-growing universe of dry academic texts, impressive and efficient graphics are quite rare. Driven by widespread software legacy issues and mostly outdated limitations imposed by traditional scientific publishers, researchers often consider producing high quality graphics as a peripheral optional task – “if time allows” (spoiler: it won’t). Yet, modern tools place data visualization in the focus of research workflows when it comes to conveying the results. Hence, the ability to turn a large dataset into an insightful visualization is an increasingly valuable skill in academia.
+
+The course aims to empower the participants with the flexibility that the R+tidyverse framework gives to visualize data (the practical examples mostly use demographic data). The course covers some aspects of data visualization theory and best/worst practice examples, but it's primarily practice oriented including live coding sessions and short lecture/showcase parts.
+
+Practical coding sessions start from basic introduction to tidy data manipulation and ggplot2 basics. Next, practical examples cover the creation of certain most useful types of plots. Important data visualization choices and caveats are discussed along the way. Special attention is devoted to producing geographical maps, which are no longer the luxury of professional cartographers but have turned, with the help of R, into yet another data visualization type. Going beyond ggplot2, the course presents an introduction to interactive data visualization.
+
+
+# Prerequisites
+- [R](https://cloud.r-project.org)  
+- [Rstudio](https://www.rstudio.com/products/rstudio/download/#download)  
+- [Git](https://git-scm.com/downloads)  
+- [R {packages}](/day1/install-pkg.R)
+- Basic familiarity with R, consider [RStudio Primers](https://rstudio.cloud/learn/primers)
+
+
+# [ZOOM link](https://syddanskuni.zoom.us/j/62850971309) [*password sent in email*]
 
 # Outline
 
-### Day 1, Monday, July 13: BASICS
+### Day 1, Monday, June 14: BASICS
 - Basic dataviz principles ([slides][slides-gg])
 - Impressive dataviz showcasess
 - Tidy approach to data
+- {ggplot2} basics
 
-### Day 2, Tuesday, July 14: TUNE-UP
-- {ggplot2} intro
-- Colors, themes and fonts
-- Arranging and exporting plots
+### Day 2, Tuesday, June 15: TUNE-UP
+- More advanced {ggplot2}
+- Colors in dataviz
+- Themes and fonts
+- Population pyramids and animation
 
-### Day 3, Wednesday, July 15: TOOLBOX
+### Day 3, Wednesday, June 16: TOOLBOX
 - Useful types of plots
+- Dotplots – the most neglected and powerful type of dataviz
 - Heatmaps, equality-line, ggridges, treemap
-- Ternary plots and ternary colorcoding
 
-### Day 4, Thursday, July 16: INTERACT
-- Population pyramids
-- Interactivity with {shiny}
-- Animation with {gganimate}
-
-### Day 5, Friday, July 17: MAPS
+### Day 4, Thursday, June 17: MAPS
 - The basics of map projections ([slides][slides-map])
 - {sf} – the game changer in #rspatial, `geom_sf`
 - Useful spatial processing tricks
-- Mapping Europe with {eurostat}
 
-[slides-gg]: https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-dataviz.html
-[slides-map]: https://ikashnitsky.github.io/share/2007-mpidr-dataviz/slides-maps.html
 
-# Links to submit assignments
-- Impressive dataviz -- https://bit.ly/dv-mpidr-cool (day 1) [SUMBISSIONS][gd1]
-- Crappy dataviz -- https://bit.ly/dv-mpidr-crappy (day 1) [SUMBISSIONS][gd2]
-- Ugly `ggplot2` theme -- https://bit.ly/dv-mpidr-ugly (day 3) [SUMBISSIONS][gd3]
-- Altmetric top-100 2019 -- https://bit.ly/dv-mpidr-alt (day 4) [SUMBISSIONS][gd4]
-
-[gd1]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfkNKOC1BSXFmU2NMNFJYcTJ2UTMyUHUtYUxLdmJiZ2FWekZwUjNPdFhuX3c?usp=sharing
-[gd2]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfnk1WnQwbEhzRXkzajhUS1hKQ2s0UU1HQVR4NDNGc3NUM1F4N1JTQTNHUjA?usp=sharing
-[gd3]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfmVRclVJcl9sangwMFpVYmoteUl6ZzdXbnFNSlBhNW02Yk5oaF9LRDlXRm8?usp=sharing
-[gd4]: https://drive.google.com/drive/folders/0B1Cid1hm5YLRfnEyVm5kc2xrUzZXaXRNdkNSWkJzYWZINDlnQWZDTHEwdlBjY3NLU2VEeUE?usp=sharing
+### Day 5, Friday, June 18: ROCK
+- Creative legends: {biscale}, {tricolore}
+- Interactivity: {plotly}, {gganimate}
+- Intro to {shiny}

@@ -1,5 +1,5 @@
 #===============================================================================
-# 2020-07-13 -- MPIDR dataviz
+# 2021-06-14 -- MPIDR dataviz
 # Tidy data
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -91,10 +91,6 @@ df <- inner_join(deaths, pop, by = c("year","region","sex","age")) %>%
 # saving data in Rdata (rda) format ---------------------------------------
 
 save(df, file = "data/Denmark.Rdata")
-
-
-# Erase all objects in memory
-rm(list = ls(all = TRUE))
 
 # load the result again
 load("data/Denmark.Rdata")

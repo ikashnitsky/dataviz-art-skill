@@ -1,7 +1,7 @@
 # install packages
 
 # First, install pacman to deal easier with other packages
-# solution by Sacha Epskamp from: http://stackoverflow.com/a/9341833/4638884
+# solution by Sacha Epskamp from: https://stackoverflow.com/a/9341833/4638884
 if (!require('pacman', character.only = TRUE)) {
   install.packages('pacman', dep = TRUE)
   if (!require('pacman', character.only = TRUE))
@@ -18,6 +18,7 @@ pacman::p_load(
   lubridate,
   readxl,
   rio,
+  gsheet,
   # dataviz
   ggthemes,
   ggdark,
@@ -27,16 +28,20 @@ pacman::p_load(
   cowplot,
   ggridges,
   ggforce,
+  ggfortify,
+  ggdark,
   ggalt,
   geofacet,
   ggtern,
   tricolore,
+  biscale,
   plotly,
   shiny,
   # data
   eurostat,
   tidycensus,
   wpp2015,
+  wpp2019,
   rtweet,
   gapminder,
   # animation
@@ -46,6 +51,9 @@ pacman::p_load(
   # rspatial
   sf,
   rmapshaper,
-  leaflet
+  leaflet,
+  tidygeocoder
 )
 
+# unload all packages
+pacman::p_loaded() %>% pacman::p_unload(char = .)
