@@ -26,12 +26,13 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - Basic familiarity with R, consider [RStudio Primers](https://rstudio.cloud/learn/primers)
 
 
-# [ZOOM link](https://syddanskuni.zoom.us/j/62850971309) [*password sent in email*]
+# [ZOOM link](https://syddanskuni.zoom.us/j/62850971309) 
+[*password sent in email*]
 
 # Outline
 
 ### Day 1, Monday, June 14: BASICS
-- Basic dataviz principles ([slides][slides-gg])
+- Basic dataviz principles ([slides][slides-gg] *link will be shared after the lecture*)
 - Impressive dataviz showcasess
 - Tidy approach to data
 - {ggplot2} basics
@@ -48,7 +49,7 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - Heatmaps, equality-line, ggridges, treemap
 
 ### Day 4, Thursday, June 17: MAPS
-- The basics of map projections ([slides][slides-map])
+- The basics of map projections ([slides][slides-map] *link will be shared after the lecture*)
 - {sf} – the game changer in #rspatial, `geom_sf`
 - Useful spatial processing tricks
 
@@ -57,3 +58,7 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - Creative legends: {biscale}, {tricolore}
 - Interactivity: {plotly}, {gganimate}
 - Intro to {shiny}
+
+
+[slides-gg]: https://ikashnitsky.github.io
+[slides-map]: https://ikashnitsky.github.io
