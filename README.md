@@ -2,8 +2,8 @@
 
 ![[teaser][small]][large]
 
-[small]: https://i.imgur.com/jeO5gxW.png
-[large]: https://i.imgur.com/yVB7iYK.png
+[small]: https://i.imgur.com/Ddm1fz6.png
+[large]: https://i.imgur.com/vD21CWl.jpg
 
 # [Course announcement @ MPIDR][link]
 
