@@ -1,11 +1,11 @@
-# Data Visualization – the Art/Skill Cocktail
+# Data Visualization – the Art/Skill Cocktail [@DatavizArtSkill](https://twitter.com/DatavizArtSkill)
 
 ![[teaser][small]][large]
 
 [small]: https://i.imgur.com/Ddm1fz6.png
 [large]: https://i.imgur.com/vD21CWl.jpg
 
-# [Course announcement @ MPIDR][link]
+# [MPIDR course announcement][link]
 
 [link]: https://bit.ly/mpidr-dataviz-2021
 
@@ -21,7 +21,7 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 # Prerequisites
 - [R](https://cloud.r-project.org)  
 - [Rstudio](https://www.rstudio.com/products/rstudio/download/#download)  
-- [Git](https://git-scm.com/downloads)  
+- [Git](https://git-scm.com/downloads) ([help page](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN))
 - [R {packages}](/day1/install-pkg.R)
 - Basic familiarity with R, consider [RStudio Primers](https://rstudio.cloud/learn/primers)
 
@@ -32,8 +32,8 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 # Outline
 
 ### Day 1, Monday, June 14: BASICS
-- Basic dataviz principles ([slides][slides-gg] *link will be shared after the lecture*)
-- Impressive dataviz showcasess
+- Basic dataviz principles ([slides][slides-gg])
+- Impressive dataviz showcases
 - Tidy approach to data
 - {ggplot2} basics
 
@@ -61,9 +61,9 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 
 
 # Links to submit assignments
-- Impressive dataviz -- http://bit.ly/21-impressive-dataviz (day 1) [SUMBISSIONS][gd1]
+- Impressive dataviz -- http://bit.ly/21-impressive-dataviz (day 1) 
 - Crappy dataviz -- http://bit.ly/21-crappy-dataviz (day 1) 
 
 
-[slides-gg]: https://ikashnitsky.github.io
+[slides-gg]: https://ikashnitsky.github.io/share/2106-mpidr-dataviz/slides-dataviz.html#/
 [slides-map]: https://ikashnitsky.github.io
