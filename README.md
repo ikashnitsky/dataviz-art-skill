@@ -60,5 +60,10 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - Intro to {shiny}
 
 
+# Links to submit assignments
+- Impressive dataviz -- http://bit.ly/21-impressive-dataviz (day 1) [SUMBISSIONS][gd1]
+- Crappy dataviz -- http://bit.ly/21-crappy-dataviz (day 1) 
+
+
 [slides-gg]: https://ikashnitsky.github.io
 [slides-map]: https://ikashnitsky.github.io
