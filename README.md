@@ -1,11 +1,11 @@
-# Data Visualization – the Art/Skill Cocktail
+# Data Visualization – the Art/Skill Cocktail [@DatavizArtSkill](https://twitter.com/DatavizArtSkill)
 
 ![[teaser][small]][large]
 
 [small]: https://i.imgur.com/Ddm1fz6.png
 [large]: https://i.imgur.com/vD21CWl.jpg
 
-# [Course announcement @ MPIDR][link]
+# [MPIDR course announcement][link]
 
 [link]: https://bit.ly/mpidr-dataviz-2021
 
@@ -21,7 +21,7 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 # Prerequisites
 - [R](https://cloud.r-project.org)  
 - [Rstudio](https://www.rstudio.com/products/rstudio/download/#download)  
-- [Git](https://git-scm.com/downloads)  
+- [Git](https://git-scm.com/downloads) ([help page](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN))
 - [R {packages}](/day1/install-pkg.R)
 - Basic familiarity with R, consider [RStudio Primers](https://rstudio.cloud/learn/primers)
 
@@ -29,19 +29,19 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 # [ZOOM link](https://syddanskuni.zoom.us/j/62850971309) 
 [*password sent in email*]
 
+# [GDoc Open Communication space](https://docs.google.com/document/d/1ibMWzcb2a2WzgCyHgr4EfF2FazmEAProXniiRO5oEhw/edit?usp=sharing)
+
 # Outline
 
 ### Day 1, Monday, June 14: BASICS
-- Basic dataviz principles ([slides][slides-gg] *link will be shared after the lecture*)
-- Impressive dataviz showcasess
+- Basic dataviz principles ([slides][slides-gg])
+- Impressive dataviz showcases
 - Tidy approach to data
-- {ggplot2} basics
 
 ### Day 2, Tuesday, June 15: TUNE-UP
-- More advanced {ggplot2}
+- {ggplot2} basics
 - Colors in dataviz
 - Themes and fonts
-- Population pyramids and animation
 
 ### Day 3, Wednesday, June 16: TOOLBOX
 - Useful types of plots
@@ -53,12 +53,17 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - {sf} – the game changer in #rspatial, `geom_sf`
 - Useful spatial processing tricks
 
-
 ### Day 5, Friday, June 18: ROCK
 - Creative legends: {biscale}, {tricolore}
 - Interactivity: {plotly}, {gganimate}
 - Intro to {shiny}
 
 
-[slides-gg]: https://ikashnitsky.github.io
+# Links to submit assignments
+- Impressive dataviz -- http://bit.ly/21-impressive-dataviz (day 1) [GALLERY](https://drive.google.com/drive/folders/1ILBRg879xMzLNlyyzVC4XBMA6gI1Cd6kS8nOl-UnFVNxsw4JztfuycS9F4kxdJzTp9pseaFZ?usp=sharing)
+- Crappy dataviz -- http://bit.ly/21-crappy-dataviz (day 1) [GALLERY](https://drive.google.com/drive/folders/14f9qCA5fPmGHZ1k6roq18IWeezPs0er9s4zeuCaVLbrNsdmjK3flBU9SPbxzqkqIQ9zn0rEk?usp=sharing)
+- Ugly `ggplot2` theme -- http://bit.ly/21-ugly-theme (days 2-3) 
+
+
+[slides-gg]: https://ikashnitsky.github.io/share/2106-mpidr-dataviz/slides-dataviz.html#/
 [slides-map]: https://ikashnitsky.github.io

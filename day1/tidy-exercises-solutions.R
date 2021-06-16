@@ -28,6 +28,9 @@ pop <- read_excel(path = 'data/data-denmark.xlsx', sheet = 'pop')
 deaths %>% 
   filter(year == "2003", sex == "m", age == "total") %>% 
   arrange(value %>% desc) # sort in descending order by value
+deaths %>% 
+  filter(year == "2003", sex == "m", age == "total") %>% 
+  filter(value == max(value))
 
 # A: Region DK01 (which is Copenhagen area, no wonder here)
 

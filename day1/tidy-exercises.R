@@ -17,7 +17,7 @@ library(readxl)
 readxl::excel_sheets('data/data-denmark.xlsx')
 
 deaths <- read_excel(path = 'data/data-denmark.xlsx', sheet = 'deaths')
-pop <- read_excel(path = 'data/data-denmark.xlsx', sheet = 'pop')
+pop    <- read_excel(path = 'data/data-denmark.xlsx', sheet = 'pop')
 
 
 # Ex 1. deaths dataframe --------------------------------------------------
