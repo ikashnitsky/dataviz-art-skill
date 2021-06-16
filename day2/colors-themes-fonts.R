@@ -49,7 +49,7 @@ crossing(
 
 gg <- ggplot2::last_plot()
 
-# Genger colors
+# Gender colors
 # https://blog.datawrapper.de/gendercolor/
 # https://twitter.com/d_alburez/status/1184120385899581440
 
@@ -127,4 +127,4 @@ gg + theme_minimal(base_family = font_rc)
 # https://twitter.com/CedScherer/status/1236056151210500096
 
 # submit your results here:
-# https://bit.ly/dv-mpidr-ugly
+# http://bit.ly/21-ugly-theme
