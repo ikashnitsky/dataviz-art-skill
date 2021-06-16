@@ -7,8 +7,6 @@
 # load the packages
 library(tidyverse)
 
-# to do -- change to twitter ikashnitsky example
-
 
 # load data --  New York Daily Death Records  1957--1967
 load("data/death-by-day.rda")
@@ -25,3 +23,7 @@ df %>%
     labs(x = "week of the year", y = NULL,
          title = "Numbers of deaths in New York State",
          caption = "Data: Genealogical Research Death Index: Beginning 1957\nhttps://www.healthdata.gov/dataset/genealogical-research-death-index-beginning-1957")
+
+
+# another example with twitter data
+# https://twitter.com/ikashnitsky/status/1265570413997953024

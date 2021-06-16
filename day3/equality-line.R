@@ -15,9 +15,8 @@
 # play with GGP educational attainment data -------------------------------
 
 library(tidyverse)
-library(janitor)
 
-educ <- read_csv2(here::here("data/CDB_EAUS.csv"), na = "..", skip = 2) %>% 
+educ <- read_csv2("data/CDB_EAUS.csv", na = "..", skip = 2) %>% 
     pivot_longer(3:50, names_to = "year") %>% 
     mutate(value = value / 100) %>%
     pivot_wider(names_from = Sex, values_from = value) %>% 

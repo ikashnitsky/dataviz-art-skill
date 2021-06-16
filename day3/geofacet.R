@@ -86,15 +86,5 @@ eth %>%
     scale_fill_manual(values = pal)+
     facet_geo(~ST, grid = "us_state_grid2", label = "name")
 
-eth %>% 
-    filter(SCHOOL_YEAR == "1994-1995") %>% 
-    ggplot(aes(area = prop, fill = race))+
-    geom_treemap()+
-    scale_fill_manual(values = pal)+
-    facet_geo(~ST, grid = "us_state_grid2", label = "name")+
-    coord_fixed()+
-    dark_theme_minimal()+
-    theme(legend.position = "bottom")+
-    labs(title = "Ethnic diversity in US schools, 1994-1995",
-         fill = NULL)
 
+# SCHOOL_YEAR == "1994-1995"

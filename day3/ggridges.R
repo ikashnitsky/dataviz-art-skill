@@ -25,7 +25,7 @@ data(e0M)
 e0M %>% 
     filter(country %in% countries) %>%
     select(-last.observed) %>%
-    gather(period, value, 3:15) %>%
+    pivot_longer(cols = 3:15, names_to = "period", values_to = "value") %>%
     ggplot(aes(x = value, y = period %>% fct_rev())) +
     geom_density_ridges(aes(fill = period)) +
     scale_fill_viridis_d(
