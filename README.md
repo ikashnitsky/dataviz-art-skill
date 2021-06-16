@@ -29,19 +29,19 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 # [ZOOM link](https://syddanskuni.zoom.us/j/62850971309) 
 [*password sent in email*]
 
+# [GDoc Open Communication space](https://docs.google.com/document/d/1ibMWzcb2a2WzgCyHgr4EfF2FazmEAProXniiRO5oEhw/edit?usp=sharing)
+
 # Outline
 
 ### Day 1, Monday, June 14: BASICS
 - Basic dataviz principles ([slides][slides-gg])
 - Impressive dataviz showcases
 - Tidy approach to data
-- {ggplot2} basics
 
 ### Day 2, Tuesday, June 15: TUNE-UP
-- More advanced {ggplot2}
+- {ggplot2} basics
 - Colors in dataviz
 - Themes and fonts
-- Population pyramids and animation
 
 ### Day 3, Wednesday, June 16: TOOLBOX
 - Useful types of plots
@@ -53,7 +53,6 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - {sf} – the game changer in #rspatial, `geom_sf`
 - Useful spatial processing tricks
 
-
 ### Day 5, Friday, June 18: ROCK
 - Creative legends: {biscale}, {tricolore}
 - Interactivity: {plotly}, {gganimate}
@@ -61,8 +60,8 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 
 
 # Links to submit assignments
-- Impressive dataviz -- http://bit.ly/21-impressive-dataviz (day 1) 
-- Crappy dataviz -- http://bit.ly/21-crappy-dataviz (day 1) 
+- Impressive dataviz -- http://bit.ly/21-impressive-dataviz (day 1) [GALLERY](https://drive.google.com/drive/folders/1ILBRg879xMzLNlyyzVC4XBMA6gI1Cd6kS8nOl-UnFVNxsw4JztfuycS9F4kxdJzTp9pseaFZ?usp=sharing)
+- Crappy dataviz -- http://bit.ly/21-crappy-dataviz (day 1) [GALLERY](https://drive.google.com/drive/folders/14f9qCA5fPmGHZ1k6roq18IWeezPs0er9s4zeuCaVLbrNsdmjK3flBU9SPbxzqkqIQ9zn0rEk?usp=sharing)
 
 
 [slides-gg]: https://ikashnitsky.github.io/share/2106-mpidr-dataviz/slides-dataviz.html#/
