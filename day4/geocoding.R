@@ -6,7 +6,7 @@
 
 # Deriving coordinates from a sting of text that represents a physical location on Earth is a common geo data processing task. A common case would be an address question in a survey. There is a way to automate queries to a special GIS service so that it takes a text sting as an input and returns the geographic coordiantes. Here I give an example with the birth places that you kindly contributed.
 # Data (no longer editable): 
-# https://docs.google.com/spreadsheets/d/17NO71nNe8TJtbd4CWEa8PXsH3CNdNAEjBJdqdcXDukk/edit?usp=sharing 
+# https://docs.google.com/spreadsheets/d/1votBvnnKwa-m04Il5eZFAEB8UrUCxxx9mQcwyJmnjjY/edit?usp=sharing 
 
 library(tidyverse)
 library(sf)
@@ -16,7 +16,7 @@ library(ggdark)
 # https://stackoverflow.com/a/28986107/4638884
 library(gsheet)
 
-raw <- gsheet2tbl("https://docs.google.com/spreadsheets/d/17NO71nNe8TJtbd4CWEa8PXsH3CNdNAEjBJdqdcXDukk")
+raw <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1votBvnnKwa-m04Il5eZFAEB8UrUCxxx9mQcwyJmnjjY")
 
 df <- raw %>% 
   janitor::clean_names() %>% 

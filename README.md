@@ -63,7 +63,8 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - Impressive dataviz -- http://bit.ly/21-impressive-dataviz (day 1) [GALLERY](https://drive.google.com/drive/folders/1ILBRg879xMzLNlyyzVC4XBMA6gI1Cd6kS8nOl-UnFVNxsw4JztfuycS9F4kxdJzTp9pseaFZ?usp=sharing)
 - Crappy dataviz -- http://bit.ly/21-crappy-dataviz (day 1) [GALLERY](https://drive.google.com/drive/folders/14f9qCA5fPmGHZ1k6roq18IWeezPs0er9s4zeuCaVLbrNsdmjK3flBU9SPbxzqkqIQ9zn0rEk?usp=sharing)
 - Ugly `ggplot2` theme -- http://bit.ly/21-ugly-theme (days 2-3) 
+- Dataviz challenge -- http://bit.ly/21-dataviz-challenge (day 4)
 
 
 [slides-gg]: https://ikashnitsky.github.io/share/2106-mpidr-dataviz/slides-dataviz.html#/
-[slides-map]: https://ikashnitsky.github.io
+[slides-map]: https://ikashnitsky.github.io/share/2106-mpidr-dataviz/slides-maps.html#/
