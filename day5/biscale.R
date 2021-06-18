@@ -47,7 +47,7 @@ world_outline <- spData::world %>%
 
 # let's use a fancy projection
 world_outline_robinson <- world_outline %>% 
-    st_transform(crs = 54030)
+    st_transform(crs = "ESRI:54030")
 
 # produce borders layer
 country_borders <- world_outline_robinson %>% 
@@ -76,7 +76,6 @@ df_map %>%
         fill = NULL
     )
 
-ggsave("~/Downloads/map-publons.png", width = 7, height = 4)  
 
 
 # try biscale map ---------------------------------------------------------
@@ -85,16 +84,15 @@ library(biscale)
 
 df_bi <- df %>% 
     filter(researchers %>% is_weakly_greater_than(10)) %>% 
-    select(code, researchers, rev_per_res_12m) %>% 
+    select(iso_a2 = code, researchers, rev_per_res_12m) %>% 
     drop_na() %>% # needed for categorizing in 9 classes
     bi_class(
         x = researchers, y = rev_per_res_12m, 
         style = "quantile", dim = 3
-    ) %>% 
-    right_join(world_outline_robinson, by = c("code" = "iso_a2"))
+    )
 
 df_bi_map <- world_outline_robinson %>% 
-    left_join(df_bi) %>% 
+    left_join(df_bi, by = "iso_a2") %>% 
     filter(researchers %>% is_weakly_greater_than(10)) 
 
 
@@ -136,7 +134,7 @@ legend <- bi_legend(
 (out <- ggdraw(map) +
     draw_plot(legend, -.02, .15, 0.35, 0.35))
 
-ggsave("~/Downloads/map-publons-bi.png", out, width = 7, height = 4)  
+ggsave("out/map-publons-bi.png", out, width = 7, height = 4)  
 
 
 # proportion of top reviewers --------------------------------------------
@@ -165,7 +163,6 @@ df_map %>%
         fill = "%"
     )
 
-ggsave("~/Downloads/map-publons-prop-top.png", width = 7, height = 4)  
 
 
 # researchers per population --------------------------------------------
@@ -205,4 +202,3 @@ df_map %>%
         fill = "%"
     )
 
-ggsave("~/Downloads/map-publons-prop-pop.png", width = 7, height = 4)  
