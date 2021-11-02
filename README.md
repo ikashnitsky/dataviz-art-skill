@@ -1,4 +1,4 @@
-# <img src="https://i.imgur.com/lLufdBo.png" align="right" width="200" height="200" />   Data Visualization – the Art/Skill Cocktail 
+# <img src="https://i.imgur.com/lLufdBo.png" align="right" width="177" height="177" />   Data Visualization – the Art/Skill Cocktail 
 
 In the ever-growing universe of dry academic texts, impressive and efficient graphics are quite rare. Driven by widespread software legacy issues and mostly outdated limitations imposed by traditional scientific publishers, researchers often consider producing high quality graphics as a peripheral optional task – “if time allows” (spoiler: it won’t). Yet, modern tools place data visualization in the focus of research workflows when it comes to conveying the results. Hence, the ability to turn a large dataset into an insightful visualization is an increasingly valuable skill in academia.
 
@@ -16,11 +16,6 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - [R {packages}](/day1/install-pkg.R)
 - Basic familiarity with R, consider [RStudio Primers](https://rstudio.cloud/learn/primers)
 
-
-# [ZOOM link](https://syddanskuni.zoom.us/j/62850971309) 
-[*password sent in email*]
-
-# [GDoc Open Communication space](https://docs.google.com/document/d/1ibMWzcb2a2WzgCyHgr4EfF2FazmEAProXniiRO5oEhw/edit?usp=sharing)
 
 # Outline
 
