@@ -1,4 +1,4 @@
-# <img src="https://i.imgur.com/lLufdBo.png" align="right" width="150" height="150" />   Data Visualization – the Art/Skill Cocktail 
+# <img src="https://i.imgur.com/lLufdBo.png" align="right" width="200" height="200" />   Data Visualization – the Art/Skill Cocktail 
 
 In the ever-growing universe of dry academic texts, impressive and efficient graphics are quite rare. Driven by widespread software legacy issues and mostly outdated limitations imposed by traditional scientific publishers, researchers often consider producing high quality graphics as a peripheral optional task – “if time allows” (spoiler: it won’t). Yet, modern tools place data visualization in the focus of research workflows when it comes to conveying the results. Hence, the ability to turn a large dataset into an insightful visualization is an increasingly valuable skill in academia.
 
