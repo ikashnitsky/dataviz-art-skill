@@ -76,7 +76,7 @@ df_sum <- pop %>%
 
 # summarise_if(is.numeric, ...)
 df_sum_if <- pop %>% 
-  spread(year, value) %>% 
+  pivot_wider(names_from = year, values_from = value) %>% 
   group_by(sex, age) %>% 
   summarise_if(.predicate = is.numeric, .funs = mean)
 

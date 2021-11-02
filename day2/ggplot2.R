@@ -230,7 +230,18 @@ df_aq %>%
         width = .2
     )
 
-
+df_aq %>% 
+    ggplot()+
+    geom_boxplot(aes(x = month, y = temp, fill = month),alpha=.5) +
+    geom_jitter(
+        aes(
+            x = month,
+            y = temp,
+            color = month
+        ),
+        width = .2
+    ) + 
+    coord_flip()
 # combine boxplot and jitter
 
 
