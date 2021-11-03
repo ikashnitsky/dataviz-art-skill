@@ -20,33 +20,47 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 # Outline
 
 ### Day 1: BASICS
-- Basic dataviz principles ([slides][slides-gg])
+- Basic dataviz principles ([slides][slides])
 - Impressive dataviz showcases
-- Tidy approach to data
+- `tidtverse`: Tidy approach to data
 
 ### Day 2: TUNE-UP
-- {ggplot2} basics
+- `ggplot2` basics
 - Colors in dataviz
 - Themes and fonts
 
 ### Day 3: TOOLBOX
 - Useful types of plots
-- Dotplots – the most neglected and powerful type of dataviz
-- Heatmaps, equality-line, ggridges, treemap
+- Dotplot – the most neglected and powerful type of dataviz
+- Heatmap, equality-line, ggridges, treemap, ternary plots
 
 ### Day 4: MAPS
-- The basics of map projections ([slides][slides-map])
-- {sf} – the game changer in #rspatial, `geom_sf`
-- Useful spatial processing tricks
+- The basics of map projections
+- With `geom_sf` maps become yet another type of dataviz
+- Useful spatial processing tricks with `rmapshaper`
+- `biscale` maps
 
 ### Day 5: ROCK
-- Creative legends: {biscale}, {tricolore}
-- Interactivity: {plotly}, {gganimate}
-- Intro to {shiny}
+- `gganimate`: breathe life into your plots
+- Affordable interactivity with `plotly`
+- The logic of user-input apps with self-written functions
+- Cursory intro to `shiny`
+
+[slides]: https://ikashnitsky.github.io/share/slides/2109-r-ladies.html
 
 
-# Links
-
-
-[slides-gg]: https://ikashnitsky.github.io/share/2106-mpidr-dataviz/slides-dataviz.html#/
-[slides-map]: https://ikashnitsky.github.io/share/2106-mpidr-dataviz/slides-maps.html#/
+# Useful links
+- Garrick Aden-Buie's [Gentle Guide to the Grammar of Graphics](https://pkg.garrickadenbuie.com/gentle-ggplot2)   
+- Oscar Baruffa's [Big Book of R](https://www.bigbookofr.com)
+- Hadley Wickham's [R For Data Science](https://r4ds.had.co.nz)
+- Neal Grantham's [TidyTuesday Rocks app](https://nsgrantham.shinyapps.io/tidytuesdayrocks/)
+- Nathaniel Smith's [talk on the principles of viridis palettes](https://youtu.be/xAoljeRJ3lU)
+- John Burn-Murdoch's [RStudio 2021 talk](https://youtu.be/L5_4kuoiiKU)
+- Hans Rosling: [sample talk](https://youtu.be/BZoKfap4g4w); [Factfulness](https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814); [gapminder.org](https://www.gapminder.org/tools/#$chart-type=bubbles&url=v1)
+- [Thread on excess deaths plots](https://twitter.com/ikashnitsky/status/1409472083965349892) 
+- [Thread](https://twitter.com/ikashnitsky/status/1380247006170509312) on log transformation of the ratios
+- [Post on efficient RStudio layout](https://ikashnitsky.github.io/2018/perfect-rstudio-layout/)
+- [Replication materials](https://github.com/ikashnitsky/sex-gap-e0-pnas) for our recent PNAS paper
+- Boxplot + jitter example: [tweet](https://twitter.com/ikashnitsky/status/1403645553637011461)  
+- Jonas Schoeley's [HMD explorer app](https://jschoeley.shinyapps.io/hmdexp/)
+- US names shiny app: [repository](https://github.com/ikashnitsky/us-names-app); [tweet](https://twitter.com/ikashnitsky/status/1203840297911889920); [shiny app](https://ikashnitsky.shinyapps.io/us-names/)  
