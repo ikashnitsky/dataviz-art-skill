@@ -1,0 +1,547 @@
+---
+title: "Dataviz art/skill"
+subtitle: "Create powerful dataviz with R"
+author: "<br><br>**Ilya Kashnitsky**"
+date: "<br>Leverhulme Centre for Demographic Science<br>2022-09-12"
+format: 
+  revealjs:
+    theme: dark
+    highlight: zenburn
+editor: source
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE
+)
+library(knitr)
+library(tweetrmd)
+```
+
+# [@ikashnitsky]{style="color:white"} {data-background="#00acee"}
+
+## 
+
+::: columns
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1449435853638586369", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1378116363315740672", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+:::
+
+## 
+
+<img src="https://camo.githubusercontent.com/8550e9cd92efdeed088c38e7f3fec62f8f0a0f75cb8dddc397c374c1a3cf102b/68747470733a2f2f696b6173686e6974736b792e6769746875622e696f2f64656d7265732d67656f66616365742f706f737465722d7061612d323031392f67656f66616365742d706f737465722d736d616c6c2e706e67" style="width:100%"/>
+
+::: footer
+<https://doi.org/10.4054/demres.2019.41.17>
+:::
+
+## 
+
+```{r, echo=FALSE}
+tweet_embed("https://twitter.com/ikashnitsky/status/1404307967537713152", align = "center", theme = "dark")
+```
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/HrlVOcQ.png" style="width:100%"/>
+
+::: footer
+<https://doi.org/10.33612/diss.134195227>
+:::
+
+## 
+
+<img src="https://i.imgur.com/JdGefX1.jpg" style="width:70%"/>
+
+# before we start {data-background="#ffcccc"}
+
+## 
+
+<img src="https://i.imgur.com/LOBXId3.png" width="100%"/>
+
+::: footer
+<https://twitter.com/RuJEconomics/status/1191697644499984384>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://www.visualcapitalist.com/wp-content/uploads/2018/03/money-happiness-large.html">
+
+</iframe>
+
+::: footer
+<https://www.visualcapitalist.com/wp-content/uploads/2018/03/money-happiness-large.html>
+:::
+
+# materials for the course {data-background="#ffffff"}
+
+::: {.r-fit-text}
+<https://github.com/ikashnitsky/dataviz-art-skill>
+:::
+
+
+# rule 0 -- DO VISUALIZE YOUR DATA {data-background="#cce5cc"}
+
+## Anscombe's Quartet
+
+<img src="http://i.imgur.com/QA3Ss8D.png" width="70%"/>
+
+::: footer
+<http://i.imgur.com/QA3Ss8D.png>
+:::
+
+##
+
+<img src="https://damassets.autodesk.net/content/dam/autodesk/research/publications-assets/gifs/same-stats-different-graphs/DinoSequentialSmaller.gif" width="100%"/>
+
+::: footer
+<https://www.autodesk.com/research/publications/same-stats-different-graphs>
+:::
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/MBozukova/status/1387094850995118081", align = "center", theme = "dark", hide_thread = T)
+```
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/Ym0oKHj.png" width="60%"/>
+
+::: footer
+<https://i.imgur.com/Ym0oKHj.png>
+:::
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/T7xz3UN.png" width="100%"/>
+
+::: footer
+<https://i.imgur.com/T7xz3UN.png>
+:::
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/MxUNZxV.png" width="100%"/>
+
+::: footer
+<https://i.imgur.com/MxUNZxV.png>
+:::
+
+
+
+# rule 1 -- text should be horizontal {data-background="#ffeb7f"}
+
+## 
+
+<img src="https://pbs.twimg.com/media/EyeZQtdWUAUlBbR?format=png&amp;name=large" width="80%"/>
+
+::: footer
+<https://twitter.com/ikashnitsky/status/1378673154730647555>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://ikashnitsky.github.io/2019/dotplot/">
+
+</iframe>
+
+::: footer
+<https://ikashnitsky.github.io/2019/dotplot>
+:::
+
+## example of a figure improvement
+
+<img src="https://i.imgur.com/OX29e5f.png" width="90%"/>
+
+::: footer
+<https://doi.org/10/ggbtpx>
+:::
+
+## 
+
+<img src="https://i.imgur.com/LJdMuGf.png" width="90%"/>
+
+::: footer
+<https://gist.github.com/ikashnitsky/2800295e304b4858be553432de4a0d11>
+:::
+
+## 
+
+<img src="https://i.imgur.com/LFsmc42.png" width="100%"/>
+
+::: footer
+<https://twitter.com/ikashnitsky/status/1192901559568523269>
+:::
+
+# rule 2 -- on slides, text should be as large as possible {data-background="#cefafa"}
+
+## 
+
+<img src="https://pbs.twimg.com/media/EyeZRl_XEAELLvu?format=jpg&amp;name=medium" width="70%"/>
+
+::: footer
+<https://twitter.com/ikashnitsky/status/1380247030463881224>
+:::
+
+
+## 
+
+<img src="https://i.imgur.com/bYePASN.jpg" width="100%"/>
+
+::: footer
+<https://i.imgur.com/bYePASN.jpg>
+:::
+
+## 
+
+<img src="https://i.imgur.com/nvNEc2F.jpg" width="100%"/>
+
+::: footer
+<https://i.imgur.com/nvNEc2F.jpg>
+:::
+
+## 
+
+<img src="https://i.imgur.com/KpBVKP1.png" width="100%"/>
+
+::: footer
+<https://i.imgur.com/KpBVKP1.png>
+:::
+
+# rule 3 -- mind colors, especially regarding colorblind friendliness {data-background="#ffeb7f"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1257952618267148289", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/sjmgarnier/status/1381250856239124482", align = "center", theme = "dark", hide_thread = T)
+```
+
+# rule 4 -- highlight what's important for the story {data-background="#ffcccc"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/AlexSelbyB/status/1404075318449692674", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+<iframe width="100%" height="650px" src="https://barcanumbers.wordpress.com/2018/12/06">
+
+</iframe>
+
+::: footer
+<https://barcanumbers.wordpress.com/2018/12/06>
+:::
+
+## 
+
+<img src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd6c748xw2pzm8.cloudfront.net%2Fprod%2Ff9faaed0-3bf3-11ec-a642-c9de12a2f753-fullwidth.png?dpr=2&fit=scale-down&quality=medium&source=next&width=1260" width="100%"/>
+
+::: footer
+<https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441>
+:::
+
+
+# rule 5 -- think about the nature of your data {data-background="#ffeb7f"}
+
+##
+
+<img src="https://pbs.twimg.com/media/FbkNIuwWYAQ4w7X?format=png&name=medium" width="100%"/>
+
+::: footer
+<https://twitter.com/geokaramanis/status/1565297006779793409>
+:::
+
+##
+
+<img src="https://pbs.twimg.com/media/FVcGETcXwAADKqb?format=jpg&name=large" width="100%"/>
+
+::: footer
+<https://twitter.com/maartenzam/status/1537705354372558848>
+:::
+
+
+##
+
+<img src="https://pbs.twimg.com/media/Fb6WkKFWQAE4XYB?format=jpg&name=4096x4096" width="100%"/>
+
+::: footer
+<https://mpidr.shinyapps.io/stmortality>
+:::
+
+
+##
+
+
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1409472083965349892", align = "center", theme = "dark", hide_thread = T)
+```
+
+
+## 
+
+::: columns
+::: {.column width="50%"}
+<img src="https://pbs.twimg.com/media/FDwgYqQXoAEVWlv?format=png&name=4096x4096" width="100%"/>
+
+:::
+
+::: {.column width="50%"}
+<img src="https://pbs.twimg.com/media/FXT_cS0XwAAdoVQ?format=jpg&name=large" width="100%"/>
+
+:::
+:::
+
+
+::: footer
+<https://twitter.com/SeppalaVilleEN/status/1458076684134100992>     
+<https://twitter.com/favstats/status/1546141616003584006>      
+:::
+
+##
+
+<img src="https://pbs.twimg.com/media/EYAWJv0WAAAJk_-?format=jpg&name=4096x4096"/>
+
+::: footer
+<https://twitter.com/jakekaupp/status/1261032357722800131>
+:::
+
+
+
+##
+<img src="https://i.imgur.com/Ylf0Uoh.png"/>
+
+
+
+
+
+# [NOTE -- plots don't have to be overly complicated to be powerful]{style="color:white"}  {data-background="#00acee"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/ed_hawkins/status/1380478355921854466", align = "center", theme = "dark", hide_thread = T)
+```
+
+
+##
+
+<img src="https://pbs.twimg.com/media/Dew4XmvXkAA3_hX?format=jpg&name=large" width="100%"/>
+
+::: footer
+<https://twitter.com/metropop_eu/status/1003238957499518976>
+:::
+
+
+## 
+
+<img src="https://fivethirtyeight.com/wp-content/uploads/2015/05/goldenburg-oldest-person-chart1.png" width="60%"/>
+
+::: footer
+<https://fivethirtyeight.com/features/why-the-oldest-person-in-the-world-keeps-dying>
+:::
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/SnoozeInBrief/status/1568558242166366208", align = "center", theme = "dark", hide_thread = T)
+```
+
+
+
+
+
+
+
+
+
+
+# (not a rule) suggestion
+
+## 
+
+::: {.r-fit-text}
+When possible and meaningful for your story
+:::
+
+::: {.r-fit-text}
+[animate]{style="color:#f4ff81"}
+:::
+
+
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/mikeleeco/status/876792944396730368", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://www.ft.com/video/83703ffe-cd5c-4591-9b4f-a3c087aa6d19">
+
+</iframe>
+
+::: footer
+<https://www.ft.com/video/83703ffe-cd5c-4591-9b4f-a3c087aa6d19>
+:::
+
+## 
+
+::: {.r-fit-text}
+Or make it completely
+:::
+
+::: {.r-fit-text}
+[interactive]{style="color:#ffb2dd"}
+:::
+
+
+
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://jschoeley.shinyapps.io/hmdexp">
+
+</iframe>
+
+::: footer
+<https://jschoeley.shinyapps.io/hmdexp>
+:::
+
+# Dataviz principles {data-background="#ffffff"}
+
+
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://ft-interactive.github.io/visual-vocabulary/">
+
+</iframe>
+
+::: footer
+<https://ft-interactive.github.io/visual-vocabulary>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://serialmentor.com/dataviz/">
+
+</iframe>
+
+::: footer
+<https://serialmentor.com/dataviz>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="http://socviz.co/index.html">
+
+</iframe>
+
+::: footer
+<http://socviz.co/index.html>
+:::
+
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://policyviz.com/books/">
+
+</iframe>
+
+::: footer
+<https://policyviz.com/books>
+:::
+
+## 
+
+::: {.r-fit-text}
+Jonas Shoeley's slides
+:::
+
+::: {.r-fit-text}
+<https://github.com/jschoeley/idem_viz>
+:::
+
+
+# Tidyverse {data-background="#cefafa"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/TrustBiologist/status/1404078363300483087", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+::: {.r-fit-text}
+The most influential R developer
+:::
+
+## Hadley Wickham
+
+![](http://i.imgur.com/BHfreww.jpg)
+
+
+## Pipes: the new way to write R code 
+
+<img src="https://pbs.twimg.com/media/EEn5cPNWwAA4LP4?format=jpg&name=medium" width="100%"/>
+
+::: footer
+<https://twitter.com/andrewheiss/status/1173743447171354624>
+:::
+
+
+
+
+# TidyTuesday
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://nsgrantham.shinyapps.io/tidytuesdayrocks">
+
+</iframe>
+
+::: footer
+<https://nsgrantham.shinyapps.io/tidytuesdayrocks>
+:::
+
+
+# great examples {data-background="#ffeb7f"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/CedScherer/status/1546544104007471106", align = "center", theme = "dark", hide_thread = T)
+```
+
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://guns.periscopic.com"> </iframe>
+
+::: footer
+<https://guns.periscopic.com>
+:::
+

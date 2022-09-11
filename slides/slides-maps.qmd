@@ -1,0 +1,314 @@
+---
+title: "Dataviz art/skill"
+subtitle: "Maps with R"
+author: "<br><br>**Ilya Kashnitsky**"
+date: "<br>Barcelona Summer School of Demography 2022<br>2022-07-21"
+format: 
+  revealjs:
+    theme: dark
+    highlight: zenburn
+editor: source
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE
+)
+library(knitr)
+library(tweetrmd)
+```
+
+# [@IFckingLoveMaps]{style="color:white"} {data-background="#00acee"}
+
+## 
+
+::: columns
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/IFckingLoveMaps/status/1229435663923240963", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/TerribleMaps/status/1518564075416002563", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+:::
+
+
+## 
+
+::: columns
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1071704893084352512", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1531695114585776130", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+:::
+
+
+# [With R, maps became]{style="color:#ffffff"} [yet another type]{style="color:#e6ee9c"} [of dataviz]{style="color:#ffffff"} {data-background="#00251a"}
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://r-graph-gallery.com">
+
+</iframe>
+
+::: footer
+<https://r-graph-gallery.com>
+:::
+
+# Main take-away: Day 1 {data-background="#cce5cc"}
+
+## 
+<img src="https://i.imgur.com/JdGefX1.jpg" style="width:70%"/>
+
+# Main take-away: Day 2 {data-background="#ffeb7f"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/TrustBiologist/status/1404078363300483087", align = "center", theme = "dark", hide_thread = T)
+```
+
+
+# Main take-away: Day 3 {data-background="#cefafa"}
+
+##
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://nsgrantham.shinyapps.io/tidytuesdayrocks/">
+
+</iframe>
+
+::: footer
+<https://nsgrantham.shinyapps.io/tidytuesdayrocks>
+:::
+
+
+
+# Map projections {data-background="#ffeb7f"}
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://xkcd.com/977/">
+
+</iframe>
+
+::: footer
+<https://xkcd.com/977>
+:::
+
+## 
+
+![](https://i.imgur.com/HmwuO7c.png)
+
+## Mercator explained
+
+<iframe width="960" height="540" src="https://www.youtube.com/embed/CPQZ7NcQ6YQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+## 
+
+<iframe width="1000" height="600" src="https://www.youtube.com/embed/kIID5FDi2JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+## 
+
+::: columns
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/neilrkaye/status/1082660077625061384", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/Pisarski/status/1052486032766197760", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+:::
+
+## New fancy projection (Waterman Butterfly)
+
+<iframe width="960" height="540" src="https://www.youtube.com/embed/_zmQInsMsXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/ashastral/status/1072313190590103557", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="http://epsg.io">
+
+</iframe>
+
+::: footer
+<http://epsg.io>
+:::
+
+# Are we too focused on areas?
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/karim_douieb/status/1181934417650040832", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/nzzvisuals/status/1186225049960943617", align = "center", theme = "dark", hide_thread = T)
+```
+
+# Sources of geodata {data-background="#ffcccc"}
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://gadm.org/data.html">
+
+</iframe>
+
+::: footer
+<https://gadm.org/data.html>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="http://wiki.openstreetmap.org/wiki/Shapefiles">
+
+</iframe>
+
+::: footer
+<http://wiki.openstreetmap.org/wiki/Shapefiles>
+:::
+
+## 
+
+\[google "download shapefile" =)\]{font-size:2em"}
+
+# Where to go next? {data-background="#cefafa"}
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://geocompr.robinlovelace.net">
+
+</iframe>
+
+::: footer
+<https://geocompr.robinlovelace.net>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://cengel.github.io/R-spatial/">
+
+</iframe>
+
+::: footer
+<https://cengel.github.io/R-spatial>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://bookdown.org">
+
+</iframe>
+
+::: footer
+<https://bookdown.org>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://www.r-bloggers.com">
+
+</iframe>
+
+::: footer
+<https://www.r-bloggers.com>
+:::
+
+# Packages to explore {data-background="#cce5cc"}
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html">
+
+</iframe>
+
+::: footer
+<https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://r-spatial.github.io/sf/">
+
+</iframe>
+
+::: footer
+<https://r-spatial.github.io/sf>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://walkerke.github.io/tidycensus/articles/basic-usage.html">
+
+</iframe>
+
+::: footer
+<https://walkerke.github.io/tidycensus/articles/basic-usage.html>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://bhaskarvk.github.io/tilegramsR/">
+
+</iframe>
+
+::: footer
+<https://bhaskarvk.github.io/tilegramsR>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://cran.r-project.org/web/packages/voteogram/vignettes/intro_to_voteogram.html">
+
+</iframe>
+
+::: footer
+<https://cran.r-project.org/web/packages/voteogram/vignettes/intro_to_voteogram.html>
+:::
+
+## 
+
+<iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://www.r-graph-gallery.com/cartogram.html">
+
+</iframe>
+
+::: footer
+<https://www.r-graph-gallery.com/cartogram.html>
+:::
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/VictimOfMaths/status/1404455932717830152", align = "center", theme = "dark", hide_thread = T)
+```

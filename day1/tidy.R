@@ -1,5 +1,5 @@
 #===============================================================================
-# 2021-06-14 -- MPIDR dataviz
+# 2022-09-12 -- LCDS dataviz
 # Tidy data
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -32,7 +32,6 @@ pop_w <- pop %>%
 # back to long format
 pop_l <- pop_w %>% pivot_longer(contains("200"), names_to = "year")
 
-# new pivot_* functions !!!
 
 
 # Basic dplyr functions ---------------------------------------------------
@@ -40,14 +39,25 @@ pop_l <- pop_w %>% pivot_longer(contains("200"), names_to = "year")
 # filter
 pop_filt <- pop %>% filter(year=="2003", !sex=="b")
 
-# magrittr !!!
-
 # select
 pop_select <- pop %>% select(contains("a"))
 
+# slice
+deaths %>% slice(1:3)
 
-# bind dfs
-df_bind <- bind_rows(pop, deaths)
+# slice_max
+deaths %>% slice_max(value)
+
+# group
+deaths %>% 
+  group_by(region, sex) %>% 
+  slice_max(value)
+
+# group %>% summarize %>% ungroup
+df_sum <- pop %>% 
+  group_by(region, sex, age) %>% 
+  summarise(mean = mean(value)) %>% 
+  ungroup()
 
 
 # join
@@ -67,28 +77,14 @@ df_tr <- df_joined %>% transmute(region, sex, mx = value.x / value.y)
 
 
 
-# group %>% summarize %>% ungroup
-df_sum <- pop %>% 
-  group_by(region, sex, age) %>% 
-  summarise(mean = mean(value)) %>% 
-  ungroup()
+
+# saving data in Rdata (rda) format ---------------------------------------
 
 
-# summarise_if(is.numeric, ...)
-df_sum_if <- pop %>% 
-  pivot_wider(names_from = year, values_from = value) %>% 
-  group_by(sex, age) %>% 
-  summarise_if(.predicate = is.numeric, .funs = mean)
-
-
-# now we save the data frame to be used in the ggplot show
+# save clean data frame 
 df <- inner_join(deaths, pop, by = c("year","region","sex","age")) %>% 
   rename(deaths = value.x, pop = value.y) %>% 
   mutate(mx = deaths / pop)
-
-
-
-# saving data in Rdata (rda) format ---------------------------------------
 
 save(df, file = "data/Denmark.Rdata")
 

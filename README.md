@@ -10,7 +10,8 @@ The course aims to empower the participants with the flexibility that the R+tidy
 Practical coding sessions start from basic introduction to tidy data manipulation and ggplot2 basics. Next, practical examples cover the creation of certain most useful types of plots. Important data visualization choices and caveats are discussed along the way. Special attention is devoted to producing geographical maps, which are no longer the luxury of professional cartographers but have turned, with the help of R, into yet another data visualization type. Going beyond ggplot2, the course presents an introduction to interactive data visualization.
 
 # Course Twitter account: [@DatavizArtSkill](https://twitter.com/DatavizArtSkill)
-# Video lectures: https://bit.ly/dataviz-art-skill
+
+<!-- Video lectures: https://bit.ly/dataviz-art-skill -->
 
 # Prerequisites
 - [R](https://cloud.r-project.org)  
@@ -23,33 +24,40 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 # Outline
 
 ### Day 1: BASICS
-- Basic dataviz principles ([slides][slides])
+- Basic dataviz principles ([slides][slides-gg])
 - Impressive dataviz showcases
-- `tidtverse`: Tidy approach to data
+- `tidyverse`: Tidy approach to data
 
 ### Day 2: TUNE-UP
 - `ggplot2` basics
-- Colors in dataviz
-- Themes and fonts
+- Colors and themes in dataviz
+- Arranging and exporting plots
 
 ### Day 3: TOOLBOX
 - Useful types of plots
-- Dotplot – the most neglected and powerful type of dataviz
-- Heatmap, equality-line, ggridges, treemap, ternary plots
+- Heatmaps, dotplots, ggridges, treemap, geofacet
+- Interactivity: `plotly`, `gganimate`
 
 ### Day 4: MAPS
-- The basics of map projections
+- The basics of map projections ([slides][slides-maps])
 - With `geom_sf` maps become yet another type of dataviz
 - Useful spatial processing tricks with `rmapshaper`
-- `biscale` maps
 
 ### Day 5: ROCK
-- `gganimate`: breathe life into your plots
-- Affordable interactivity with `plotly`
-- The logic of user-input apps with self-written functions
-- Cursory intro to `shiny`
+- dataviz challenge in teams
+- brief presentations by teams and discussion
+- course wrap-up
 
-[slides]: https://ikashnitsky.github.io/share/slides/2109-r-ladies.html
+[slides-gg]: https://ikashnitsky.github.io/dataviz-art-skill/slides/slides-dataviz.html
+[slides-maps]: https://ikashnitsky.github.io/dataviz-art-skill/slides/slides-maps.html
+
+
+# Links to submit assignments
+- Ugly `ggplot2` theme -- https://bit.ly/lcds-ugly (day 2)
+<!-- - Any plot with own data -- https://bit.ly/lcds-own (day 3) -->
+<!-- - Geocoding -- https://bit.ly/lcds-geocoding (day 4) -->
+<!-- - Challenge -- https://bit.ly/lcds-challenge (day 5) -->
+
 
 
 # Useful links
@@ -66,4 +74,14 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - [Replication materials](https://github.com/ikashnitsky/sex-gap-e0-pnas) for our recent PNAS paper
 - Boxplot + jitter example: [tweet](https://twitter.com/ikashnitsky/status/1403645553637011461)  
 - Jonas Schoeley's [HMD explorer app](https://jschoeley.shinyapps.io/hmdexp/)
-- US names shiny app: [repository](https://github.com/ikashnitsky/us-names-app); [tweet](https://twitter.com/ikashnitsky/status/1203840297911889920); [shiny app](https://ikashnitsky.shinyapps.io/us-names/)  
+<!-- - US names shiny app: [repository](https://github.com/ikashnitsky/us-names-app); [tweet](https://twitter.com/ikashnitsky/status/1203840297911889920); [shiny app](https://ikashnitsky.shinyapps.io/us-names/)  -->
+
+
+# Previous runs of the course
+
+The current version is updated for run at **Leverhulme Centre for Demographic Science** in September 2022.  
+
+This course was offered several times in past:   
+- Barcelona Summer School of Demography, Universitat Autònoma de Barcelona, Barcelona, Spain, [2019](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v1.0), [2021](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v2.0),  [2022](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v.3.0)
+- Max Planck Institute for Demographic Research & International Max Planck Research School for Population, Health and Data Science, Rostock, Germany, [2020](https://github.com/ikashnitsky/dataviz-art-skill/releases/tag/v1.0),  [2021](https://github.com/ikashnitsky/dataviz-art-skill/releases/tag/v2.0)
+

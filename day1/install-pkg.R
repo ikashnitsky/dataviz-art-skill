@@ -57,3 +57,7 @@ pacman::p_load(
 
 # unload all packages
 pacman::p_loaded() %>% pacman::p_unload(char = .)
+
+# last preparatory step
+# create the "out" directory to export outputs
+fs::dir_create("out")
