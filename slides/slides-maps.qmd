@@ -2,7 +2,7 @@
 title: "Dataviz art/skill"
 subtitle: "Maps with R"
 author: "<br><br>**Ilya Kashnitsky**"
-date: "<br>Barcelona Summer School of Demography 2022<br>2022-07-21"
+date: "<br>Leverhulme Centre for Demographic Science<br>2022-09-15"
 format: 
   revealjs:
     theme: dark
@@ -72,7 +72,7 @@ tweet_embed("https://twitter.com/ikashnitsky/status/1531695114585776130", align 
 # Main take-away: Day 1 {data-background="#cce5cc"}
 
 ## 
-<img src="https://i.imgur.com/JdGefX1.jpg" style="width:70%"/>
+<img src="https://i.imgur.com/JdGefX1.jpg" style="width:100%"/>
 
 # Main take-away: Day 2 {data-background="#ffeb7f"}
 
@@ -99,6 +99,13 @@ tweet_embed("https://twitter.com/TrustBiologist/status/1404078363300483087", ali
 
 # Map projections {data-background="#ffeb7f"}
 
+
+##
+
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/kIID5FDi2JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
 ## 
 
 <iframe width="1000px" height="650px" style="background: #FFFFFF;" src="https://xkcd.com/977/">
@@ -109,45 +116,24 @@ tweet_embed("https://twitter.com/TrustBiologist/status/1404078363300483087", ali
 <https://xkcd.com/977>
 :::
 
-## 
-
-![](https://i.imgur.com/HmwuO7c.png)
 
 ## Mercator explained
 
-<iframe width="960" height="540" src="https://www.youtube.com/embed/CPQZ7NcQ6YQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="100%" height="650" src="https://www.youtube.com/embed/CPQZ7NcQ6YQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
 </iframe>
 
-## 
 
-<iframe width="1000" height="600" src="https://www.youtube.com/embed/kIID5FDi2JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+## New fancy projection
 
-</iframe>
-
-## 
-
-::: columns
-::: {.column width="50%"}
-```{r}
-tweet_embed("https://twitter.com/neilrkaye/status/1082660077625061384", align = "center", theme = "dark", hide_thread = T)
-```
-:::
-
-::: {.column width="50%"}
-```{r}
-tweet_embed("https://twitter.com/Pisarski/status/1052486032766197760", align = "center", theme = "dark", hide_thread = T)
-```
-:::
-:::
-
-## New fancy projection (Waterman Butterfly)
-
-<iframe width="960" height="540" src="https://www.youtube.com/embed/_zmQInsMsXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="100%" height="650"  src="https://www.youtube.com/embed/_zmQInsMsXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
 </iframe>
 
-## 
+
+
+
+##
 
 ```{r}
 tweet_embed("https://twitter.com/ashastral/status/1072313190590103557", align = "center", theme = "dark", hide_thread = T)
@@ -199,9 +185,20 @@ tweet_embed("https://twitter.com/nzzvisuals/status/1186225049960943617", align =
 <http://wiki.openstreetmap.org/wiki/Shapefiles>
 :::
 
+
+
 ## 
 
-\[google "download shapefile" =)\]{font-size:2em"}
+
+::: {.r-fit-text}
+[google]{style="color:#f4ff81"}
+:::
+
+::: {.r-fit-text}
+"download shapefile" =)
+:::
+
+
 
 # Where to go next? {data-background="#cefafa"}
 
@@ -306,9 +303,3 @@ tweet_embed("https://twitter.com/nzzvisuals/status/1186225049960943617", align =
 ::: footer
 <https://www.r-graph-gallery.com/cartogram.html>
 :::
-
-## 
-
-```{r}
-tweet_embed("https://twitter.com/VictimOfMaths/status/1404455932717830152", align = "center", theme = "dark", hide_thread = T)
-```
