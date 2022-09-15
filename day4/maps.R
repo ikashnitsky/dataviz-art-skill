@@ -317,6 +317,20 @@ p + geom_sf(data = it_cit)
 
 # GADMTools ---------------------------------------------------------------
 
+
+
+get_gadm <- function(id, level) {
+  
+  url <-  url(paste0(
+    "https://geodata.ucdavis.edu/gadm/gadm3.6/Rsf/gadm36_",
+    id, "_", level, "_sf.rds"
+  ), "rb")
+  
+  readRDS(url)
+  
+}
+
+
 # https://cran.r-project.org/web/packages/GADMTools/vignettes/Using_GADMTools.pdf
 library(GADMTools)
 
