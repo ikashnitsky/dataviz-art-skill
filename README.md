@@ -56,7 +56,7 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - Ugly `ggplot2` theme -- https://bit.ly/lcds-ugly (day 2)
 <!-- Any plot with own data -- https://bit.ly/lcds-own (day 3)  -->
 - Geocoding -- https://bit.ly/lcds-geocoding (day 4)
-<!-- - Challenge -- https://bit.ly/lcds-challenge (day 5) -->
+- In class maps -- https://bit.ly/lcds-own-maps (day 4)
 
 
 
