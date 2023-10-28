@@ -9,7 +9,7 @@ The course aims to empower the participants with the flexibility that the R+tidy
 
 Practical coding sessions start from basic introduction to tidy data manipulation and ggplot2 basics. Next, practical examples cover the creation of certain most useful types of plots. Important data visualization choices and caveats are discussed along the way. Special attention is devoted to producing geographical maps, which are no longer the luxury of professional cartographers but have turned, with the help of R, into yet another data visualization type. Going beyond ggplot2, the course presents an introduction to interactive data visualization.
 
-# Course Twitter account: [@DatavizArtSkill](https://twitter.com/DatavizArtSkill)
+# Course BlueSky account: [@datavizartskill.ikashnitsky.phd](https://bsky.app/profile/datavizartskill.ikashnitsky.phd)
 
 <!-- Video lectures: https://bit.ly/dataviz-art-skill -->
 
@@ -61,6 +61,8 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 
 
 # Useful links
+- Kyle Walker's [dataviz book chapter](https://walker-data.com/census-r/exploring-us-census-data-with-visualization.html)
+- Andy Kirk's [The Little of Visualisation Design](https://visualisingdata.com/2016/03/little-visualisation-design/) blog series
 - Garrick Aden-Buie's [Gentle Guide to the Grammar of Graphics](https://pkg.garrickadenbuie.com/gentle-ggplot2)   
 - Oscar Baruffa's [Big Book of R](https://www.bigbookofr.com)
 - Hadley Wickham's [R For Data Science](https://r4ds.had.co.nz)
