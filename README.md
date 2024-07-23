@@ -1,4 +1,4 @@
-# Dataviz – the Art/Skill Cocktail
+# <img src="https://i.imgur.com/HMrQRSW.png" align="right" width="150" height="150" />Dataviz – the Art/Skill Cocktail
 
 ![teaser](https://i.imgur.com/oQ5qnS7.png)
 
@@ -17,6 +17,7 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - [R](https://cloud.r-project.org)  
 - [Rstudio](https://www.rstudio.com/products/rstudio/download/#download)  
 - [Git](https://git-scm.com/downloads) ([help page](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN))
+- [Github Desktop](https://github.com/apps/desktop)
 - [R {packages}](/day1/install-pkg.R)
 - Basic familiarity with R, consider [RStudio Primers](https://rstudio.cloud/learn/primers)
 
@@ -35,7 +36,7 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 
 ### Day 3: TOOLBOX
 - Useful types of plots
-- Heatmaps, dotplots, ggridges, treemap, geofacet
+- Heatmap, dotplot, ggridges, treemap, geofacet
 - Interactivity: `plotly`, `gganimate`
 
 ### Day 4: MAPS
@@ -52,38 +53,46 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 [slides-maps]: https://ikashnitsky.github.io/dataviz-art-skill/slides/slides-maps.html
 
 
-# Links to submit assignments
-- Ugly `ggplot2` theme -- https://bit.ly/lcds-ugly (day 2)
-<!-- Any plot with own data -- https://bit.ly/lcds-own (day 3)  -->
-- Geocoding -- https://bit.ly/lcds-geocoding (day 4)
-- In class maps -- https://bit.ly/lcds-own-maps (day 4)
+# Links to submit in-class assignments
+- Ugly `ggplot2` theme -- https://bit.ly/bssd24-ugly (day 2)
+- Any plot with own data -- https://bit.ly/bssd24-own (day 3)
+- Geocoding -- https://bit.ly/bssd24-geocoding (day 4, in class)
+- Maps -- https://bit.ly/bssd24-maps (day 4)
+- Challenge -- https://bit.ly/bssd24-challenge (day 5)
 
 
 
 # Useful links
-- Kyle Walker's [dataviz book chapter](https://walker-data.com/census-r/exploring-us-census-data-with-visualization.html)
-- Andy Kirk's [The Little of Visualisation Design](https://visualisingdata.com/2016/03/little-visualisation-design/) blog series
-- Garrick Aden-Buie's [Gentle Guide to the Grammar of Graphics](https://pkg.garrickadenbuie.com/gentle-ggplot2)   
 - Oscar Baruffa's [Big Book of R](https://www.bigbookofr.com)
 - Hadley Wickham's [R For Data Science](https://r4ds.had.co.nz)
+- Kyle Walker's [dataviz book chapter](https://walker-data.com/census-r/exploring-us-census-data-with-visualization.html)
 - Neal Grantham's [TidyTuesday Rocks app](https://nsgrantham.shinyapps.io/tidytuesdayrocks/)
-- Nathaniel Smith's [talk on the principles of viridis palettes](https://youtu.be/xAoljeRJ3lU)
-- John Burn-Murdoch's [RStudio 2021 talk](https://youtu.be/L5_4kuoiiKU)
+- Andy Kirk's [The little of visualisation design](https://visualisingdata.com/the-little-of-visualisation-design/) 
+- Jonas Schoeley's [2017 IDEM dataviz course](https://github.com/jschoeley/idem_viz)
+- Garrick Aden-Buie's [Gentle Guide to the Grammar of Graphics](https://pkg.garrickadenbuie.com/gentle-ggplot2)   
+- [R Graph Gallery](https://r-graph-gallery.com/)
+- Yan Holtz's [tool for selecting color palletes](https://python-graph-gallery.com/color-palette-finder/)
 - Hans Rosling: [sample talk](https://youtu.be/BZoKfap4g4w); [Factfulness](https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814); [gapminder.org](https://www.gapminder.org/tools/#$chart-type=bubbles&url=v1)
+- Nathaniel Smith's [talk on the principles of viridis palettes](https://youtu.be/xAoljeRJ3lU)
+- David Robinson's [RStudio Conference 2019 talk](https://posit.co/resources/videos/the-unreasonable-effectiveness-of-public-work/) on the immense benefits of being open and sharing stuff freely 
+- John Burn-Murdoch's [RStudio 2021 talk](https://youtu.be/L5_4kuoiiKU)
 - [Thread on excess deaths plots](https://twitter.com/ikashnitsky/status/1409472083965349892) 
 - [Thread](https://twitter.com/ikashnitsky/status/1380247006170509312) on log transformation of the ratios
 - [Post on efficient RStudio layout](https://ikashnitsky.github.io/2018/perfect-rstudio-layout/)
-- [Replication materials](https://github.com/ikashnitsky/sex-gap-e0-pnas) for our recent PNAS paper
+- [Replication materials](https://github.com/ikashnitsky/sex-gap-e0-pnas) for Zarulli etal 2021 PNAS paper
 - Boxplot + jitter example: [tweet](https://twitter.com/ikashnitsky/status/1403645553637011461)  
 - Jonas Schoeley's [HMD explorer app](https://jschoeley.shinyapps.io/hmdexp/)
-<!-- - US names shiny app: [repository](https://github.com/ikashnitsky/us-names-app); [tweet](https://twitter.com/ikashnitsky/status/1203840297911889920); [shiny app](https://ikashnitsky.shinyapps.io/us-names/)  -->
+- US names shiny app: [repository](https://github.com/ikashnitsky/us-names-app); [tweet](https://twitter.com/ikashnitsky/status/1203840297911889920); [shiny app](https://ikashnitsky.shinyapps.io/us-names/)  
+- Jim Vaupel's [brilliant talk](https://twitter.com/ikashnitsky/status/1512700871968186379) on the unique central positioning of demography in science  
+- Years of life stolen by gun shooting in the US -- [dataviz by Periscopic](https://guns.periscopic.com) 
+- NYT Giorgia Lupi's [Long COVID data storytelling](https://www.nytimes.com/interactive/2023/12/14/opinion/my-life-with-long-covid.html?unlocked_article_code=1.F00.435C.ojkN6YhWx43Q) 
+- NYT (Motoko Rich, Amanda Cox, Matthew Bloch) [US districts school kids performance against parent's wealthiness](https://www.nytimes.com/interactive/2016/04/29/upshot/money-race-and-success-how-your-school-district-compares.html)
 
 
 # Previous runs of the course
 
-The current version is updated for run at **Leverhulme Centre for Demographic Science** in September 2022.  
-
 This course was offered several times in past:   
-- Barcelona Summer School of Demography, Universitat Autònoma de Barcelona, Barcelona, Spain, [2019](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v1.0), [2021](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v2.0),  [2022](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v.3.0)
+- Barcelona Summer School of Demography, Universitat Autònoma de Barcelona, Barcelona, Spain, [2019](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v1.0), [2021](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v2.0),  [2022](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v.3.0), [2024](https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v4.0)
 - Max Planck Institute for Demographic Research & International Max Planck Research School for Population, Health and Data Science, Rostock, Germany, [2020](https://github.com/ikashnitsky/dataviz-art-skill/releases/tag/v1.0),  [2021](https://github.com/ikashnitsky/dataviz-art-skill/releases/tag/v2.0)
+- Leverhulme Centre for Demographic Science, Oxford, UK [2022](https://github.com/ikashnitsky/dataviz-art-skill/releases/tag/v3.0)
 
