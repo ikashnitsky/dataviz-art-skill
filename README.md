@@ -1,6 +1,4 @@
-# <img src="https://i.imgur.com/HMrQRSW.png" align="right" width="150" height="150" />Dataviz – the Art/Skill Cocktail
-
-![teaser](https://i.imgur.com/oQ5qnS7.png)
+# <img src="https://i.imgur.com/2lMpmyW.png" align="right" width="100" height="100" />Dataviz – the Art/Skill Cocktail
 
 
 In the ever-growing universe of dry academic texts, impressive and efficient graphics are quite rare. Driven by widespread software legacy issues and mostly outdated limitations imposed by traditional scientific publishers, researchers often consider producing high quality graphics as a peripheral optional task – “if time allows” (spoiler: it won’t). Yet, modern tools place data visualization in the focus of research workflows when it comes to conveying the results. Hence, the ability to turn a large dataset into an insightful visualization is an increasingly valuable skill in academia.
