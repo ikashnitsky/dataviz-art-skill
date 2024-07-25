@@ -1,0 +1,405 @@
+---
+title: "Dataviz art/skill"
+subtitle: "Create powerful dataviz with R"
+author: "<br><br>**Ilya Kashnitsky**<br><br>Barcelona Summer School of Demography 2024<br>"
+date: "2024-07-15"
+format: 
+  revealjs:
+    theme: dark
+    highlight: zenburn
+editor: source
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE
+)
+library(knitr)
+library(tweetrmd)
+```
+
+# [@ikashnitsky.phd]{style="color:white"} {data-background="#00acee"}
+
+## 
+
+::: columns
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1449435853638586369", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1378116363315740672", align = "center", theme = "dark", hide_thread = T)
+```
+:::
+:::
+
+## 
+
+<img src="https://ikashnitsky.phd/demres-geofacet/poster-paa-2019/geofacet-poster.png" style="width:100%"/>
+
+::: footer
+<https://doi.org/10.4054/demres.2019.41.17>
+:::
+
+## 
+
+```{r, echo=FALSE}
+tweet_embed("https://twitter.com/ikashnitsky/status/1404307967537713152", align = "center", theme = "dark")
+```
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/HrlVOcQ.png" style="width:100%"/>
+
+::: footer
+<https://doi.org/10.33612/diss.134195227>
+:::
+
+## 
+
+<img src="https://i.imgur.com/JdGefX1.jpg" style="width:70%"/>
+
+# before we start {data-background="#ffcccc"}
+
+## 
+
+<img src="https://i.imgur.com/LOBXId3.png" width="100%"/>
+
+::: footer
+<https://twitter.com/RuJEconomics/status/1191697644499984384>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://www.visualcapitalist.com/wp-content/uploads/2018/03/money-happiness-large.html">
+
+</iframe>
+
+::: footer
+<https://www.visualcapitalist.com/wp-content/uploads/2018/03/money-happiness-large.html>
+:::
+
+# materials for the course {data-background="#ffffff"}
+
+[<https://github.com/ikashnitsky/dataviz-bssd>]{style="font-size:1.4em"}
+
+# rule 0 -- DO VISUALIZE YOUR DATA {data-background="#cce5cc"}
+
+## Anscombe's Quartet
+
+<img src="http://i.imgur.com/QA3Ss8D.png" width="70%"/>
+
+::: footer
+<http://i.imgur.com/QA3Ss8D.png>
+:::
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/JustinMatejka/status/859075295059562498", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/MBozukova/status/1387094850995118081", align = "center", theme = "dark", hide_thread = T)
+```
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/Ym0oKHj.png" width="60%"/>
+
+::: footer
+<https://i.imgur.com/Ym0oKHj.png>
+:::
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/T7xz3UN.png" width="100%"/>
+
+::: footer
+<https://i.imgur.com/T7xz3UN.png>
+:::
+
+##  {data-background="#ffffff"}
+
+<img src="https://i.imgur.com/MxUNZxV.png" width="100%"/>
+
+::: footer
+<https://i.imgur.com/MxUNZxV.png>
+:::
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/mikeleeco/status/876792944396730368", align = "center", theme = "dark", hide_thread = T)
+```
+
+# rule 1 -- text should be horizontal {data-background="#ffeb7f"}
+
+## 
+
+<img src="https://pbs.twimg.com/media/EyeZQtdWUAUlBbR?format=png&amp;name=large" width="80%"/>
+
+::: footer
+<https://twitter.com/ikashnitsky/status/1378673154730647555>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://ikashnitsky.github.io/2019/dotplot/">
+
+</iframe>
+
+::: footer
+<https://ikashnitsky.github.io/2019/dotplot>
+:::
+
+## example of a figure improvement
+
+<img src="https://i.imgur.com/OX29e5f.png" width="90%"/>
+
+::: footer
+<https://doi.org/10/ggbtpx>
+:::
+
+## 
+
+<img src="https://i.imgur.com/LJdMuGf.png" width="90%"/>
+
+::: footer
+<https://gist.github.com/ikashnitsky/2800295e304b4858be553432de4a0d11>
+:::
+
+## 
+
+<img src="https://i.imgur.com/LFsmc42.png" width="100%"/>
+
+::: footer
+<https://twitter.com/ikashnitsky/status/1192901559568523269>
+:::
+
+# rule 2 -- on slides, text should be as large as possible {data-background="#cefafa"}
+
+## 
+
+<img src="https://pbs.twimg.com/media/EyeZRl_XEAELLvu?format=jpg&amp;name=medium" width="70%"/>
+
+::: footer
+<https://twitter.com/ikashnitsky/status/1380247030463881224>
+:::
+
+## 
+
+<img src="https://i.imgur.com/JRC9VZG.png" width="100%"/>
+
+::: footer
+<https://i.imgur.com/JRC9VZG.png>
+:::
+
+## 
+
+<img src="https://i.imgur.com/bYePASN.jpg" width="100%"/>
+
+::: footer
+<https://i.imgur.com/bYePASN.jpg>
+:::
+
+## 
+
+<img src="https://i.imgur.com/nvNEc2F.jpg" width="100%"/>
+
+::: footer
+<https://i.imgur.com/nvNEc2F.jpg>
+:::
+
+## 
+
+<img src="https://i.imgur.com/KpBVKP1.png" width="100%"/>
+
+::: footer
+<https://i.imgur.com/KpBVKP1.png>
+:::
+
+# rule 3 -- mind colors, especially regarding colorblind friendliness {data-background="#ffeb7f"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1257952618267148289", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/ikashnitsky/status/1381638374029721600", align = "center", theme = "dark", hide_thread = T)
+```
+
+# rule 4 -- highlight what's important for the story {data-background="#ffcccc"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/AlexSelbyB/status/1404075318449692674", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+<iframe width="100%" height="650px" src="https://barcanumbers.wordpress.com/2018/12/06">
+
+</iframe>
+
+::: footer
+<https://barcanumbers.wordpress.com/2018/12/06>
+:::
+
+## 
+
+<iframe width="100%" height="650px" src="https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441">
+
+</iframe>
+
+::: footer
+<https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441>
+:::
+
+# rule 5 -- plots don't have to be overly complicated to be powerful {data-background="#cefafa"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/ed_hawkins/status/1380478355921854466", align = "center", theme = "dark", hide_thread = T)
+```
+
+##
+
+```{r}
+tweet_embed("https://twitter.com/metropop_eu/status/1003238957499518976", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+
+```{r}
+tweet_embed("https://twitter.com/CedScherer/status/1807003625836708268", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+<iframe width="100%" height="650px" src="https://fivethirtyeight.com/features/why-the-oldest-person-in-the-world-keeps-dying">
+
+</iframe>
+
+::: footer
+<https://fivethirtyeight.com/features/why-the-oldest-person-in-the-world-keeps-dying>
+:::
+
+# a great example {data-background="#ffeb7f"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/CedScherer/status/1129453356756492293", align = "center", theme = "dark", hide_thread = T)
+```
+
+# (not a rule) suggestion
+
+## 
+
+### When possible and meaningful for you story -- animate
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/karim_douieb/status/1402522532276752389", align = "center", theme = "dark", hide_thread = T)
+```
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://www.ft.com/video/83703ffe-cd5c-4591-9b4f-a3c087aa6d19">
+
+</iframe>
+
+::: footer
+<https://www.ft.com/video/83703ffe-cd5c-4591-9b4f-a3c087aa6d19>
+:::
+
+## 
+
+### Or make it completely interactive
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://jschoeley.shinyapps.io/hmdexp">
+
+</iframe>
+
+::: footer
+<https://jschoeley.shinyapps.io/hmdexp>
+:::
+
+# Dataviz principles {data-background="#ffffff"}
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://policyviz.com/2018/08/07/dataviz-cheatsheet/">
+
+</iframe>
+
+::: footer
+<https://policyviz.com/2018/08/07/dataviz-cheatsheet>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://ft-interactive.github.io/visual-vocabulary/">
+
+</iframe>
+
+::: footer
+<https://ft-interactive.github.io/visual-vocabulary>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="https://serialmentor.com/dataviz/">
+
+</iframe>
+
+::: footer
+<https://serialmentor.com/dataviz>
+:::
+
+## 
+
+<iframe width="100%" height="650px" style="background: #FFFFFF;" src="http://socviz.co/index.html">
+
+</iframe>
+
+::: footer
+<http://socviz.co/index.html>
+:::
+
+## Jonas Shoeley's slides
+
+[<https://github.com/jschoeley/idem_viz>]{style="font-size:1.5em"}
+
+# Tidyverse {data-background="#cefafa"}
+
+## 
+
+```{r}
+tweet_embed("https://twitter.com/TrustBiologist/status/1404078363300483087", align = "center", theme = "dark", hide_thread = T)
+```
+
+## The most influential R developer
+
+## Hadley Wickham
+
+![](http://i.imgur.com/BHfreww.jpg)

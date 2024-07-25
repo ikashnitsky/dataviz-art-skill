@@ -1,5 +1,5 @@
 #===============================================================================
-# 2022-09-14 -- LCDS dataviz
+# 2024-07-17 -- BSSD dataviz
 # Geofaceting & treemap
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -39,16 +39,21 @@ library(tidyverse)
 library(geofacet)
 library(magrittr)
 
-state_unemp %>% 
+state_unemp |>
     ggplot(aes(year, rate)) +
     geom_line() +
-    facet_geo(~ state, grid = "us_state_grid2", label = "name") +
-    scale_x_continuous(labels = function(x) paste0("'", substr(x, 3, 4))) +
-    labs(title = "Seasonally Adjusted US Unemployment Rate 2000-2016",
-         caption = "Data Source: bls.gov",
-         x = "Year",
-         y = "Unemployment Rate (%)") +
-    ggdark::dark_theme_minimal()+
+    facet_geo( ~ state, grid = "us_state_grid2", label = "name") +
+    scale_x_continuous(
+        labels = function(x)
+            paste0("'", substr(x, 3, 4))
+    ) +
+    labs(
+        title = "Seasonally Adjusted US Unemployment Rate 2000-2016",
+        caption = "Data Source: bls.gov",
+        x = "Year",
+        y = "Unemployment Rate (%)"
+    ) +
+    ggdark::dark_theme_minimal() +
     theme(strip.text.x = element_text(size = 6))
 
 
@@ -56,13 +61,15 @@ state_unemp %>%
 # real life example -------------------------------------------------------
 
 # treemap example using TidyTuesday Schools Ethnic Diversity dataset
-df <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-24/school_diversity.csv")
+df <- readr::read_csv(
+    "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-24/school_diversity.csv"
+)
 
 #  calculate statstic to plot
-eth <- df %>% 
-    pivot_longer(Asian:Multi, names_to = "race",  values_to = "prop") %>% 
-    group_by(ST, race, SCHOOL_YEAR) %>% 
-    summarise(prop = weighted.mean(prop, Total)) %>% 
+eth <- df |>
+    pivot_longer(Asian:Multi, names_to = "race", values_to = "prop") |>
+    group_by(ST, race, SCHOOL_YEAR) |>
+    summarise(prop = weighted.mean(prop, Total)) |>
     ungroup()
 
 library(treemapify)
@@ -71,20 +78,20 @@ library(prismatic)
 # choosing colors for race
 col <- RColorBrewer::brewer.pal(8, "Accent")
 
-col %>% prismatic::color() %>% plot
+col |> prismatic::color() |> plot()
 
-pal <- col %>% extract(c(1, 8, 6,  5, 3))
+pal <- col |> extract(c(1, 8, 6, 5, 3))
 
-pal %>% color 
-pal %>% color %>% prismatic::clr_grayscale()
-pal %>% color %>% prismatic::clr_deutan()
+pal |> color()
+pal |> color() |> prismatic::clr_grayscale()
+pal |> color() |> prismatic::clr_deutan()
 
-eth %>% 
-    filter(SCHOOL_YEAR == "2016-2017") %>% 
-    ggplot(aes(area = prop, fill = race))+
-    geom_treemap()+
-    scale_fill_manual(values = pal)+
-    facet_geo(~ST, grid = "us_state_grid2", label = "name")
+eth |>
+    filter(SCHOOL_YEAR == "2016-2017") |>
+    ggplot(aes(area = prop, fill = race)) +
+    geom_treemap() +
+    scale_fill_manual(values = pal) +
+    facet_geo( ~ ST, grid = "us_state_grid2", label = "name")
 
 
 # SCHOOL_YEAR == "1994-1995"

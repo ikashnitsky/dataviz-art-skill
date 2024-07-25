@@ -1,5 +1,5 @@
 #===============================================================================
-# 2022-09-14 -- LCDS dataviz
+# 2024-07-17 -- BSSD dataviz
 # Population pyramid -- animate
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -11,6 +11,9 @@
 
 # https://www.ft.com/video/83703ffe-cd5c-4591-9b4f-a3c087aa6d19
 
+# the social effect of a revolutionary idea
+# https://socialblade.com/twitter/user/jburnmurdoch
+
 # revealing the story
 # twitter.com/mikeleeco/status/876792944396730368
 
@@ -20,19 +23,19 @@ library(gganimate)
 
 
 # line / path
-df_aq <- airquality %>%
-    janitor::clean_names() %>%
+df_aq <- airquality |>
+    janitor::clean_names() |>
     mutate(
-        date = paste(day, month, "1973", sep = "-") %>%  lubridate::dmy(),
-        month = month %>% factor
+        date = paste(day, month, "1973", sep = "-") |>  lubridate::dmy(),
+        month = month |> factor()
     )
 
 p <- ggplot(df_aq, aes(x = date, y = temp)) +
     geom_line()
 
-ani <- p + 
-    geom_point()+
-    transition_reveal(date)+
+ani <- p +
+    geom_point() +
+    transition_reveal(date) +
     ease_aes("cubic-in-out")
 
 
@@ -47,4 +50,3 @@ animate(
 )
 
 anim_save("out/test-anim.gif")
-

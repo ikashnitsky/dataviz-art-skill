@@ -1,5 +1,5 @@
 #===============================================================================
-# 2022-09-14 -- LCDS dataviz
+# 2024-07-17 -- BSSD dataviz
 # ggridges
 # Ilya Kashnitsky, ilya.kashnitsky@gmail.com
 #===============================================================================
@@ -14,23 +14,21 @@ library(tidyverse)
 library(ggridges)
 library(wpp2015)
 
+# get the UN country names
+data(UNlocations)
+
+countries <- UNlocations |> pull(name) |> paste()
+
 # data on male life expectancy at birth
 data(e0M)
 
-# UN locations
-data(UNlocations)
-
-countries <- UNlocations %>% 
-  filter(location_type == 4) %>% 
-  pull(name)
-
-
-
-e0M %>% 
-    filter(country %in% countries) %>%
-    select(-last.observed) %>%
-    pivot_longer(cols = 3:15, names_to = "period", values_to = "value") %>%
-    ggplot(aes(x = value, y = period %>% fct_rev())) +
+e0M |>
+    filter(country %in% countries) |>
+    select(-last.observed) |>
+    pivot_longer(cols = 3:15,
+                 names_to = "period",
+                 values_to = "value") |>
+    ggplot(aes(x = value, y = period |> fct_rev())) +
     geom_density_ridges(aes(fill = period)) +
     scale_fill_viridis_d(
         option = "B",
@@ -47,5 +45,3 @@ e0M %>%
     ) +
     theme_minimal(base_family =  "mono") +
     theme(legend.position = "none")
-
-
