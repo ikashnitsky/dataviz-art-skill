@@ -47,8 +47,8 @@ Practical coding sessions start from basic introduction to tidy data manipulatio
 - brief presentations by teams and discussion
 - course wrap-up
 
-[slides-gg]: https://ikashnitsky.github.io/dataviz-art-skill/slides/slides-dataviz.html
-[slides-maps]: https://ikashnitsky.github.io/dataviz-art-skill/slides/slides-maps.html
+[slides-gg]: https://ikashnitsky.github.io/dataviz-art-skill/slides/slides-dataviz-bssd.html
+[slides-maps]: https://ikashnitsky.github.io/dataviz-art-skill/slides/slides-maps-bssd.html
 
 
 # Links to submit in-class assignments
