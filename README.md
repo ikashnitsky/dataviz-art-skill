@@ -1,4 +1,4 @@
-# <img src="https://i.imgur.com/2lMpmyW.png" align="right" width="333" height="333" />Dataviz – the Art/Skill Cocktail
+# <img src="https://i.imgur.com/MJVQRTh.png" align="right" width="333" height="333" />Dataviz – the Art/Skill Cocktail
 
 
 In the ever-growing universe of dry academic texts, impressive and efficient graphics are quite rare. Driven by widespread software legacy issues and mostly outdated limitations imposed by traditional scientific publishers, researchers often consider producing high quality graphics as a peripheral optional task – “if time allows” (spoiler: it won’t). Yet, modern tools place data visualization in the focus of research workflows when it comes to conveying the results. Hence, the ability to turn a large dataset into an insightful visualization is an increasingly valuable skill in academia.
@@ -7,7 +7,7 @@ The course aims to empower the participants with the flexibility that the R+tidy
 
 Practical coding sessions start from basic introduction to tidy data manipulation and ggplot2 basics. Next, practical examples cover the creation of certain most useful types of plots. Important data visualization choices and caveats are discussed along the way. Special attention is devoted to producing geographical maps, which are no longer the luxury of professional cartographers but have turned, with the help of R, into yet another data visualization type. Going beyond ggplot2, the course presents an introduction to interactive data visualization.
 
-# Course BlueSky account: [@datavizartskill.ikashnitsky.phd](https://bsky.app/profile/datavizartskill.ikashnitsky.phd)
+### Course BlueSky account: [@datavizartskill.ikashnitsky.phd](https://bsky.app/profile/datavizartskill.ikashnitsky.phd)
 
 <!-- Video lectures: https://bit.ly/dataviz-art-skill -->
 
