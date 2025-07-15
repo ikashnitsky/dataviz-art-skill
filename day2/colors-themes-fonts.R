@@ -77,7 +77,7 @@ n <- sample(20:50, 3)
 tibble(
     x = runif(n),
     y = runif(n),
-    size = runif(n, min = 3, max = 20),
+    size = runif(n, min = 3, max = 30),
     color = rgb(runif(n), runif(n), runif(n))
 ) |>
     ggplot(aes(x, y, size = size, color = color)) +
@@ -86,6 +86,30 @@ tibble(
     scale_size_identity() +
     coord_cartesian(c(0, 1), c(0, 1)) +
     theme_void()
+
+# letters
+sysfonts::font_add_google("Galindo", family = "gl")
+n = 26
+set.seed(8)
+
+tibble(
+  x = runif(n),
+  y = runif(n),
+  size = runif(n, min = 10, max = 70),
+  color = rgb(runif(n), runif(n), runif(n)),
+  letter = LETTERS |> sample(n, replace = TRUE)
+) |>
+  ggplot(aes(x, y, size = size, color = color)) +
+  geom_text(aes(label = letter), color = "#fff", family = "gl") +
+  scale_color_identity() +
+  scale_size_identity() +
+  coord_cartesian(c(0, 1), c(0, 1)) +
+  theme_void(base_family = "oi")+
+  theme(
+    panel.background = element_rect(fill = "black"),
+    plot.background = element_rect(fill = "black")
+  )
+
 
 
 
