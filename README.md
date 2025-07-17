@@ -1,3 +1,16 @@
+<!-- badges: start -->
+<!-- https://shields.io/badges -->
+[![R-version](https://img.shields.io/badge/4.5.1-0678b9?label=version&logo=R)][cran] 
+[![bsky](https://img.shields.io/badge/@ikashnitsky.phd-0285FF?label=bsky&logo=bluesky)][bsky]
+[![doi](https://img.shields.io/badge/10.5281/zenodo.16014438-269292?logo=DOI)][doi]
+[![orcid](https://img.shields.io/badge/0000.0003.1835.8687-004444?logo=ORCID)][orcid]
+
+[cran]: https://cran.r-project.org
+[bsky]: https://bsky.app/profile/ikashnitsky.phd
+[doi]: https://doi.org/10.5281/zenodo.16014438
+[orcid]: https://orcid.org/0000-0003-1835-8687
+<!-- badges: end -->
+
 # <img src="https://i.imgur.com/g258HfB.png" align="right" width="333" height="333" /> Dataviz – the Art/Skill Cocktail
 
 In the ever-growing universe of dry academic texts, impressive and efficient graphics are quite rare. Driven by widespread software legacy issues and mostly outdated limitations imposed by traditional scientific publishers, researchers often consider producing high quality graphics as a peripheral optional task – “if time allows” (spoiler: it won’t). Yet, modern tools place data visualization in the focus of research workflows when it comes to conveying the results. Hence, the ability to turn a large dataset into an insightful visualization is an increasingly valuable skill in academia.
